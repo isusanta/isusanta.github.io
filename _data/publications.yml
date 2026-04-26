@@ -1,0 +1,185 @@
+# Publications — Susanta Das
+# type: "journal" (includes arXiv preprints) | "book_chapter"
+# Order: reverse chronological within each type.
+
+- title: "Protein-Ligand Free Energy Perturbation on Quantum Hardware"
+  authors: "Zhen Li, Milana Bazayeva, Thaddeus Pellegrini, Mario Motta, Subhamoy Bhowmik, Susanta Das, Danil Kaliakin, Fangchun Liang, Akhil Shajan, and Kenneth M. Merz Jr."
+  venue: "arXiv:2604.09857 (2026)"
+  year: 2026
+  doi: "10.48550/arXiv.2604.09857"
+  type: "journal"
+
+- title: "Molecular Quantum Computations on a Protein"
+  authors: "Akhil Shajan, Danil Kaliakin, Fangchun Liang, Thaddeus Pellegrini, Hakan Doga, Subhamoy Bhowmik, Susanta Das, Antonio Mezzacapo, Mario Motta, and Kenneth M. Merz Jr."
+  venue: "arXiv:2512.17130 (2025)"
+  year: 2025
+  doi: "10.48550/arXiv.2512.17130"
+  type: "journal"
+
+- title: "Exploring the Frontiers of Computational NMR: Methods, Applications, and Challenges"
+  authors: "Susanta Das and Kenneth M. Merz Jr."
+  venue: "Chem. Rev. 2025, 125, 9256"
+  year: 2025
+  doi: "10.1021/acs.chemrev.5c00259"
+  type: "journal"
+
+- title: "Quantum-Centric Alchemical Free Energy Calculations"
+  authors: "Milana Bazayeva, Zhen Li, Danil Kaliakin, Fangchun Liang, Akhil Shajan, Susanta Das, and Kenneth M. Merz Jr."
+  venue: "arXiv:2506.20825 (2025)"
+  year: 2025
+  doi: "10.48550/arXiv.2506.20825"
+  type: "journal"
+
+- title: "Toward Quantum-Centric Simulations of Extended Molecules: Sample-Based Quantum Diagonalization Enhanced with Density Matrix Embedding Theory"
+  authors: "Akhil Shajan, Danil Kaliakin, Abhishek Mitra, Javier Robledo Moreno, Zhen Li, Mario Motta, Caleb Johnson, Abdullah Ash Saki, Susanta Das, Iskandar Sitdikov, Antonio Mezzacapo, and Kenneth M. Merz Jr."
+  venue: "J. Chem. Theory Comput. 2025, 21, 6801"
+  year: 2025
+  doi: "10.1021/acs.jctc.5c00114"
+  type: "journal"
+
+- title: "Accurate Quantum-Centric Simulations of Intermolecular Interactions"
+  authors: "Danil Kaliakin, Akhil Shajan, Javier Robledo Moreno, Zhen Li, Abhishek Mitra, Mario Motta, Caleb Johnson, Abdullah Ash Saki, Susanta Das, Iskandar Sitdikov, Antonio Mezzacapo, and Kenneth M. Merz Jr."
+  venue: "Nat. Commun. Phys. 2025, 8, 396"
+  year: 2025
+  doi: "10.1038/s42005-025-02305-9"
+  type: "journal"
+
+- title: "Molecular Gas-Phase Conformational Ensembles"
+  authors: "Susanta Das and Kenneth M. Merz Jr."
+  venue: "J. Chem. Inf. Model. 2024, 64, 749"
+  year: 2024
+  doi: "10.1021/acs.jcim.3c01309"
+  type: "journal"
+
+- title: "Rapid and Automated Ab Initio Metabolite Collisional Cross Section Prediction from SMILES Input"
+  authors: "Susanta Das, Laleh Dinpazhoh, Kiyoto Aramis Tanemura, and Kenneth M. Merz Jr."
+  venue: "J. Chem. Inf. Model. 2023, 63, 4995"
+  year: 2023
+  doi: "10.1021/acs.jcim.3c00890"
+  type: "journal"
+
+- title: "In Silico Collision Cross Section Calculations to Aid Metabolite Annotation"
+  authors: "Susanta Das, Kiyoto Aramis Tanemura, Laleh Dinpazhoh, Mithony Keng, Christina Schumm, Lydia Leahy, Carter K. Asef, Markace Rainey, Arthur S. Edison, Facundo M. Fernández, and Kenneth M. Merz Jr."
+  venue: "J. Am. Soc. Mass Spectrom. 2022, 33, 750"
+  year: 2022
+  doi: "10.1021/jasms.1c00315"
+  type: "journal"
+
+- title: "Quantum Chemistry Calculations for Metabolomics"
+  authors: "Ricardo M. Borges, Sean M. Colby, Susanta Das, Arthur S. Edison, Oliver Fiehn, Tobias Kind, Jesi Lee, Amy T. Merrill, Kenneth M. Merz Jr., Thomas O. Metz, Jamie R. Nunez, Dean J. Tantillo, Lee-Ping Wang, Shunyang Wang, and Ryan S. Renslow"
+  venue: "Chem. Rev. 2021, 121, 5633"
+  year: 2021
+  doi: "10.1021/acs.chemrev.0c00901"
+  type: "journal"
+
+- title: "AutoGraph: Autonomous Graph-Based Clustering of Small-Molecule Conformations"
+  authors: "Kiyoto Aramis Tanemura, Susanta Das, and Kenneth M. Merz Jr."
+  venue: "J. Chem. Inf. Model. 2021, 61, 1647"
+  year: 2021
+  doi: "10.1021/acs.jcim.0c01492"
+  type: "journal"
+
+- title: "Metabolite Structure Assignment Using In Silico NMR Techniques"
+  authors: "Susanta Das, Arthur S. Edison, and Kenneth M. Merz Jr."
+  venue: "Anal. Chem. 2020, 92, 10412"
+  year: 2020
+  doi: "10.1021/acs.analchem.0c00768"
+  type: "journal"
+
+- title: "EnzyDock: Protein-Ligand Docking of Multiple Reactive States along a Reaction Coordinate in Enzymes"
+  authors: "Susanta Das, Mor Shimshi, Keren Raz, Neta Nitoker Eliaz, Anil Ranu Mhashal, Tamar Ansbacher, and Dan T. Major"
+  venue: "J. Chem. Theory Comput. 2019, 15, 5116"
+  year: 2019
+  doi: "10.1021/acs.jctc.9b00366"
+  type: "journal"
+
+- title: "Rapid Convergence of Energy and Free Energy Profiles with Quantum Mechanical Size in Quantum Mechanical-Molecular Mechanical Simulations of Proton Transfer in DNA"
+  authors: "Susanta Das, Kwangho Nam, and Dan Thomas Major"
+  venue: "J. Chem. Theory Comput. 2018, 14, 1695"
+  year: 2018
+  doi: "10.1021/acs.jctc.7b00964"
+  type: "journal"
+
+- title: "First Principles Model Calculations of the Biosynthetic Pathway in Selinadiene Synthase"
+  authors: "Susanta Das, Mudit Dixit, and Dan T. Major"
+  venue: "Bioorg. Med. Chem. 2016, 24, 4867"
+  year: 2016
+  doi: "10.1016/j.bmc.2016.07.002"
+  type: "journal"
+
+- title: "Nucleoside-2',3'/3',5'-bis(thio)phosphate Antioxidants Are Also Capable of Disassembly of Amyloid Beta42-Zn(ii)/Cu(ii) Aggregates via Zn(ii)/Cu(ii)-Chelation"
+  authors: "Bosmat L. Hevroni, Dan T. Major, Mudit Dixit, Anil R. Mhashal, Susanta Das, and Bilha Fischer"
+  venue: "Org. Biomol. Chem. 2016, 14, 4640"
+  year: 2016
+  doi: "10.1039/C6OB00613B"
+  type: "journal"
+
+- title: "Transition Metal Doped Aluminum Clusters: An Account of Spin"
+  authors: "Turbasu Sengupta, Susanta Das, and Sourav Pal"
+  venue: "J. Phys. Chem. C 2016, 120, 10027"
+  year: 2016
+  doi: "10.1021/acs.jpcc.6b00510"
+  type: "journal"
+
+- title: "Electron Detachment and Subsequent Structural Changes of Water Clusters"
+  authors: "Susanta Das, Turbasu Sengupta, Achintya K. Dutta, and Sourav Pal"
+  venue: "J. Phys. Chem. A 2016, 120, 1065"
+  year: 2016
+  doi: "10.1021/acs.jpca.5b09389"
+  type: "journal"
+
+- title: "Additive Mediated Syn-Anti Conformational Tuning at Nucleation to Capture Elusive Polymorphs: Remarkable Role of Extended Pi-Stacking Interactions in Driving the Self-Assembly"
+  authors: "Rupesh L. Gawade, Debamitra K. Chakravarty, Amol Kotmale, Ekta Sangtani, Pranaya V. Joshi, Awais Ahmed, Manoj V. Mane, Susanta Das, Kumar Vanka, Pattuparambil R. Rajamohanan, Vedavati G. Puranik, and Rajesh G. Gonnade"
+  venue: "Cryst. Growth Des. 2016, 16, 2416"
+  year: 2016
+  doi: "10.1021/acs.cgd.6b00204"
+  type: "journal"
+
+- title: "Oxidative Addition of the C-I Bond on Aluminum Nanoclusters"
+  authors: "Turbasu Sengupta, Susanta Das, and Sourav Pal"
+  venue: "Nanoscale 2015, 7, 12109"
+  year: 2015
+  doi: "10.1039/C5NR02278A"
+  type: "journal"
+
+- title: "Dinitrogen Activation by Silicon and Phosphorus Doped Aluminum Clusters"
+  authors: "Susanta Das, Sailaja Krishnamurty, and Sourav Pal"
+  venue: "J. Phys. Chem. C 2014, 118, 19869"
+  year: 2014
+  doi: "10.1021/jp505700a"
+  type: "journal"
+
+- title: "Understanding the Site Selectivity in Small-Sized Neutral and Charged Aln Clusters Using Density Functional Theory Based Reactivity Descriptors: A Validation Study on Water Molecule Adsorption"
+  authors: "Susanta Das, Sailaja Krishnamurty, and Sourav Pal"
+  venue: "J. Phys. Chem. A 2013, 117, 8691"
+  year: 2013
+  doi: "10.1021/jp403109s"
+  type: "journal"
+
+- title: "Critical Study of the Charge Transfer Parameter for the Calculation of Interaction Energy Using the Local Hard-Soft Acid-Base Principle"
+  authors: "Susanta Das, Sapana V. Shedge, and Sourav Pal"
+  venue: "J. Phys. Chem. A 2013, 117, 10933"
+  year: 2013
+  doi: "10.1021/jp407070h"
+  type: "journal"
+
+- title: "Understanding the Orientation of Water Molecules Around the Phosphate and Attached Functional Groups in a Phospholipid Molecule: A DFT-Based Study"
+  authors: "Deepti Mishra, Susanta Das, Sailaja Krishnamurty, and Sourav Pal"
+  venue: "Molecular Simulation 2013, 39, 937"
+  year: 2013
+  doi: "10.1080/08927022.2013.783701"
+  type: "journal"
+
+- title: "Nuclear Quantum Effects in Enzymatic Reactions"
+  authors: "Dan T. Major, Reuven Eitan, Susanta Das, Anil R. Mhashal, and Vijay Singh"
+  venue: "Simulating Enzyme Reactivity: Computational Methods in Enzyme Catalysis, Royal Society of Chemistry, 2017, Ch. 9, pp. 340-376"
+  year: 2017
+  doi: "10.1039/9781782626831-00340"
+  type: "book_chapter"
+
+- title: "Practical Aspects of Multiscale Classical and Quantum Simulations of Enzyme Reactions"
+  authors: "Mudit Dixit, Susanta Das, Anil R. Mhashal, Reuven Eitan, and Dan T. Major"
+  venue: "Methods in Enzymology, 2016, 577, pp. 251-286"
+  year: 2016
+  doi: "10.1016/bs.mie.2016.05.046"
+  type: "book_chapter"
