@@ -7,23 +7,23 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Associate at the [Cleveland Clinic](https://www.lerner.ccf.org/), working at the intersection of quantum computing, quantum chemistry, and biomolecular simulation. My current work focuses on near-term quantum hardware for electronic structure calculations and QM/ML workflows for metabolomics and precision medicine.
+Research Associate at Cleveland Clinic developing quantum algorithms, QM/MM methods, and QM/ML workflows for problems in chemical energetics, enzyme catalysis, and metabolomics.
 
 ## Quantum Computing for Chemistry
 
-My primary research develops quantum algorithms and workflows for chemically accurate electronic structure on IBM quantum processors. Working with the [Merz group](https://www.lerner.ccf.org/computational-medicine/merz/) and IBM Quantum, I implement the Embedded Wavefunction-Sample-based Quantum Diagonalization (EWF-SQD) pipeline for strongly correlated molecular systems. Current applications include FLiBe (LiF-BeF2) molten salt clusters relevant to advanced nuclear reactors, benchmarked against classical FCI references at the Oak Ridge Leadership Computing Facility (ORNL project CHM243). Our results demonstrate that near-term quantum hardware can achieve chemically relevant accuracy (within 0.7 kcal/mol of FCI) for energy-relevant ionic systems.
+Current work focuses on near-term quantum hardware for electronic structure. I implement the Embedded Wavefunction-Sample-based Quantum Diagonalization (EWF-SQD) pipeline on IBM quantum processors, in active collaboration with IBM Research and the Merz group. Current benchmark target: FLiBe (LiF-BeF2) molten salt clusters relevant to advanced nuclear reactors. Results demonstrate recovery of relative energies within 0.7 kcal/mol of classical FCI, including strongly multi-reference cases. Parallel work with the Merz group extends quantum-centric methods to protein-ligand free energy perturbation and intermolecular interactions.
 
-## QM/MM and Biomolecular Simulation
+## QM/MM and Enzyme Catalysis
 
-I have developed and applied QM/MM methods for enzyme catalysis and biomacromolecule simulation. This includes EnzyDock, a CHARMM-based docking code for studying reactive states along enzymatic reaction coordinates (terpene synthases, Diels-Alder reactions, racemases), and QM region size convergence studies in DNA proton transfer systems.
+At Bar-Ilan University (with Prof. Dan T. Major), I developed EnzyDock — a CHARMM-based QM/MM docking code for studying multiple reactive states along enzymatic reaction coordinates, applied to terpene synthases, Diels-Alder reactions, and racemases. Separate work on QM region size convergence in DNA proton transfer established practical guidelines for QM/MM system construction (*J. Chem. Theory Comput.* 2018, 2019).
 
 ## Computational NMR and Metabolomics
 
-During my postdoctoral work at Michigan State University (with Prof. Kenneth M. Merz Jr.), I built QM/ML pipelines for NMR chemical shift and collisional cross section (CCS) prediction to support metabolite structure elucidation. This work produced the AutoGraph conformational clustering algorithm and the POMICS web server (pomics.org), and resulted in a review in *Chemical Reviews* (2025) on computational NMR methods.
+At Michigan State University (with Prof. Kenneth M. Merz Jr.), I built QM/ML pipelines for NMR chemical shift and collisional cross section (CCS) prediction to support metabolite structure elucidation, along with the AutoGraph conformational clustering algorithm. This work is reviewed in *Chemical Reviews* (2025). Select papers: *Anal. Chem.* 2020, *J. Am. Soc. Mass Spectrom.* 2022, *J. Chem. Inf. Model.* 2023, 2024.
 
-## Earlier Work: Nanocluster Catalysis
+## Nanocluster Catalysis
 
-My doctoral research at CSIR-National Chemical Laboratory (with Prof. Sourav Pal) used DFT, ab initio molecular dynamics, and Coupled-Cluster methods to study aluminum nanocluster reactivity: dinitrogen activation, C-I bond oxidative addition, and site selectivity via conceptual DFT reactivity descriptors.
+Doctoral research at CSIR-National Chemical Laboratory applied DFT, ab initio MD, and Coupled-Cluster methods to aluminum nanocluster reactivity: dinitrogen activation by Si/P-doped clusters, oxidative addition of C-I bonds, and site selectivity via conceptual DFT reactivity descriptors.
 
 ---
 
