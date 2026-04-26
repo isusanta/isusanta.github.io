@@ -26,6 +26,8 @@ PI: Prof. Kenneth M. Merz Jr. ("Kennie").
 ### Done
 - [x] Fork + GitHub Pages live
 - [x] `_config.yml` — name, bio, email, Google Scholar, GitHub username set
+- [x] `CLAUDE.md` — session context file created
+- [x] Git push authentication — PAT token stored in macOS Keychain (works silently now)
 
 ### Next: Step 3 — `_data/navigation.yml`
 Then steps 4–10 in order (see Build Order below).
@@ -71,7 +73,8 @@ files/cv.pdf              ← CV PDF (copy from ~/Documents/myWebPage/)
 |---|---|---|
 | 1 | Clone + VS Code | ✓ Done |
 | 2 | `_config.yml` | ✓ Done |
-| 3 | `_data/navigation.yml` | Next |
+| 2b | `CLAUDE.md` + Git auth (PAT) | ✓ Done |
+| 3 | `_data/navigation.yml` | **Next** |
 | 4 | Copy assets (photo, images, CV PDF) | Pending |
 | 5 | `_sass/variables.scss` — teal color | Pending |
 | 6 | `_pages/about.md` — homepage | Pending |
