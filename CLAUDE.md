@@ -1,5 +1,6 @@
-# CLAUDE.md — Susanta Das Academic Website
-# Auto-loaded by Claude Code at every session start.
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Who I Am
 
@@ -48,7 +49,7 @@ CCF laptop — no admin password. `code .` doesn't work from terminal; open VS C
 | Homepage | Research statement full-width first, photo below (`author_profile: false`, `layout: single`) |
 | Research page | 5 project blocks, each with graphical abstract image (alternating left/right, 300px) |
 | Publications | YAML data file `_data/publications.yml` rendered by Liquid loop in `publications.md` |
-| Color accent | Deep teal `#006d77` — 2 lines in `_sass/variables.scss` |
+| Color accent | Deep teal `#006d77` — edit `$primary-color` in `_sass/theme/_default_light.scss` |
 | Audience | Hiring committees + general academic audience |
 
 ## Files to Edit (only these — never touch other template files)
@@ -61,11 +62,27 @@ _pages/about.md           ← homepage
 _pages/research.md        ← 5 project blocks
 _pages/publications.md    ← loops over publications.yml
 _pages/cv.md              ← CV + PDF download
-_sass/variables.scss      ← teal color (2 lines)
+_sass/theme/_default_light.scss  ← teal color ($primary-color, line 5)
 images/profile.png        ← headshot (copy from ~/Documents/myWebPage/)
 images/research/          ← graphical abstracts
 files/cv.pdf              ← CV PDF (copy from ~/Documents/myWebPage/)
 ```
+
+## Jekyll Architecture
+
+This is a Jekyll static site. GitHub Pages rebuilds on every push (~30s). No local build needed.
+
+**Theme:** Academic Pages (fork of Minimal Mistakes). `site_theme: "default"` in `_config.yml` loads `_sass/theme/_default_light.scss` (light) and `_default_dark.scss` (dark). The accent color is `$primary-color` in `_default_light.scss` — changing it updates links, base color, and hover states via CSS custom properties.
+
+**Layouts** (in `_layouts/`):
+- `single` — standard page; sidebar shown when `author_profile: true`
+- `archive` — collection listing pages
+- `cv-layout` — dedicated CV layout
+- `talk` — talk entries
+
+**Collections** (`_publications/`, `_talks/`, `_teaching/`, `_portfolio/`) output individual pages. This site skips the `_publications/` collection and uses `_data/publications.yml` + a Liquid loop in `_pages/publications.md` instead — gives full control over formatting.
+
+**`_config.yml` is not hot-reloaded** by `jekyll serve`. Restart server after editing it.
 
 ## Build Order
 
