@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Susanta Das"
 title_separator          : "-"
 name                     : &name "Susanta Das"
-description              : &description "Computational Chemist | Quantum Computing | QM/MM | Cleveland Clinic LRI"
+description              : &description "Computational Chemist | Quantum Computing | QM/MM | Cleveland Clinic"
 url                      : https://isusanta.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "isusanta/isusanta.github.io"
@@ -25,9 +25,9 @@ author:
   avatar           : "profile.png"
   name             : "Susanta Das"
   pronouns         : # example: "she/her"
-  bio              : "Research Associate at Cleveland Clinic Lerner Research Institute. Computational chemist at the intersection of quantum computing, quantum chemistry, and biomolecular simulation."
+  bio              : "Research Associate at Cleveland Clinic. Computational chemist at the intersection of quantum computing, quantum chemistry, and biomolecular simulation."
   location         : "Cleveland, Ohio, USA"
-  employer         : "Cleveland Clinic LRI"
+  employer         : "Cleveland Clinic"
   uri              : # URL
   email            : "susanta.chemistry@gmail.com"
 
