@@ -1,6 +1,12 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, p, li, td, th, .page__content {
+  font-family: 'Inter', sans-serif;
+}
+
 /*
  * This file controls what is imported from /_sass
  *
