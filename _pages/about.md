@@ -9,6 +9,15 @@ redirect_from:
 
 Research Associate at Cleveland Clinic developing quantum algorithms, QM/MM methods, and QM/ML workflows for problems in chemical energetics, enzyme catalysis, and metabolomics.
 
+## Career
+
+| Period | Position | Institution |
+|---|---|---|
+| Oct 2023 – present | Research Associate | Cleveland Clinic, Cleveland, OH, USA |
+| Apr 2019 – Oct 2023 | Postdoctoral Fellow | Michigan State University, East Lansing, MI, USA |
+| Aug 2015 – Apr 2019 | Postdoctoral Research Fellow | Bar-Ilan University, Ramat-Gan, Israel |
+| Jan 2010 – Aug 2015 | Doctoral Researcher | CSIR-NCL / AcSIR, Pune, India |
+
 ## Quantum Computing for Chemistry
 
 Current work focuses on near-term quantum hardware for electronic structure. I implement the Embedded Wavefunction-Sample-based Quantum Diagonalization (EWF-SQD) pipeline on IBM quantum processors, in active collaboration with IBM Research and the Merz group. Current benchmark target: FLiBe (LiF-BeF2) molten salt clusters relevant to advanced nuclear reactors. Results demonstrate recovery of relative energies within 0.7 kcal/mol of classical FCI, including strongly multi-reference cases. Parallel work with the Merz group extends quantum-centric methods to protein-ligand free energy perturbation and intermolecular interactions.
@@ -25,13 +34,3 @@ At Michigan State University (with Prof. Kenneth M. Merz Jr.), I built QM/ML pip
 
 Doctoral research at CSIR-National Chemical Laboratory applied DFT, ab initio MD, and Coupled-Cluster methods to aluminum nanocluster reactivity: dinitrogen activation by Si/P-doped clusters, oxidative addition of C-I bonds, and site selectivity via conceptual DFT reactivity descriptors.
 
----
-
-## Career
-
-| Period | Position | Institution |
-|---|---|---|
-| Oct 2023 – present | Research Associate | Cleveland Clinic, Cleveland, OH, USA |
-| Apr 2019 – Oct 2023 | Postdoctoral Fellow | Michigan State University, East Lansing, MI, USA |
-| Aug 2015 – Apr 2019 | Postdoctoral Research Fellow | Bar-Ilan University, Ramat-Gan, Israel |
-| Jan 2010 – Aug 2015 | Doctoral Researcher | CSIR-NCL / AcSIR, Pune, India |
