@@ -11,7 +11,7 @@ author_profile: true
 
 {% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
 
-<ol>
+<ol reversed>
 {% for pub in sorted_pubs %}
   <li>
     {% if pub.type == "book_chapter" %}<strong>(BOOK CHAPTER)</strong> {% endif %}{{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
