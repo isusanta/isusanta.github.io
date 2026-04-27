@@ -46,6 +46,7 @@ CCF laptop — no admin password. `code .` doesn't work from terminal; open VS C
 | 8 | `_data/publications.yml` — 26 papers (24 journal + 2 book chapters) | ✓ Done |
 | 9 | `_pages/publications.html` — Liquid loop, two sections, Susanta Das bolded | ✓ Done |
 | 10 | `_pages/cv.md` — positions, education, awards, skills, review service | ✓ Done |
+| 11 | `assets/css/main.scss` — Inter font (Google Fonts, weights 300–700) | ✓ Done |
 
 **Next priority:** Step 4 (copy assets) — headshot unlocks the sidebar photo; CV PDF unlocks the download button.
 
@@ -57,6 +58,7 @@ CCF laptop — no admin password. `code .` doesn't work from terminal; open VS C
 | Research page | 5 project blocks, each with graphical abstract image (alternating left/right, 300px) |
 | Publications | `_data/publications.yml` rendered by Liquid loop; two sections: Journal Articles & Preprints / Book Chapters |
 | Color accent | Deep teal `#006d77` — edit `$primary-color` in `_sass/theme/_default_light.scss` (line 5) |
+| Font | Inter (Google Fonts, weights 300–700) — loaded in `assets/css/main.scss` |
 | Audience | Hiring committees + general academic audience |
 | Citation count | Manual update — edit `_pages/publications.html` line 9 |
 
@@ -71,6 +73,7 @@ _pages/publications.html             ← DONE (Liquid loop, 2 sections)
 _pages/cv.md                         ← DONE (positions, education, skills)
 _pages/research.md                   ← PENDING (5 project blocks)
 _sass/theme/_default_light.scss      ← PENDING (teal color, $primary-color line 5)
+assets/css/main.scss                 ← DONE (Inter font, Google Fonts import)
 images/profile.png                   ← PENDING (copy headshot from ~/Documents/myWebPage/)
 images/research/                     ← PENDING (copy graphical abstracts)
 files/cv.pdf                         ← PENDING (copy CV PDF)
