@@ -9,28 +9,12 @@ author_profile: true
 <p>Also see my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a> (594 citations, April 2026).</p>
 {% endif %}
 
-{% assign journals = site.data.publications | where: "type", "journal" %}
-{% assign chapters = site.data.publications | where: "type", "book_chapter" %}
+{% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
 
-<h2>Journal Articles &amp; Preprints</h2>
-
-<ol reversed>
-{% for pub in journals %}
+<ol>
+{% for pub in sorted_pubs %}
   <li>
-    {{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
-    &ldquo;{{ pub.title }}.&rdquo;
-    <em>{{ pub.venue }}</em>.
-    <a href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>
-  </li>
-{% endfor %}
-</ol>
-
-<h2>Book Chapters</h2>
-
-<ol reversed>
-{% for pub in chapters %}
-  <li>
-    {{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
+    {% if pub.type == "book_chapter" %}<strong>(BOOK CHAPTER)</strong> {% endif %}{{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
     &ldquo;{{ pub.title }}.&rdquo;
     <em>{{ pub.venue }}</em>.
     <a href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>
