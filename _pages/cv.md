@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<p><a href="/files/cv.pdf" class="btn btn--primary">Download CV (PDF)</a></p>
+<!-- Download CV button removed until a real files/cv.pdf exists. To restore: <p><a href="/files/cv.pdf" class="btn btn--primary">Download CV (PDF)</a></p> -->
 
 ## Research Appointments
 
