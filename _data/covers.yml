@@ -1,0 +1,21 @@
+# Featured work gallery — Susanta Das
+# One block per image in images/covers/. Rendered as a card row at the top of the Publications page.
+# - image: filename inside images/covers/
+# - journal: label shown under the card
+# - title: paper title (caption)
+# - doi: bare DOI (no https) — card links to the paper
+
+- image: "chemrev-cover.jpg"
+  journal: "Chemical Reviews — Journal Cover"
+  title: "Exploring the Frontiers of Computational NMR"
+  doi: "10.1021/acs.chemrev.5c00259"
+
+- image: "jctc-2018.png"
+  journal: "J. Chem. Theory Comput."
+  title: "Rapid Convergence of Energy Profiles with QM Size in QM/MM Proton Transfer in DNA"
+  doi: "10.1021/acs.jctc.7b00964"
+
+- image: "metabolomics-chemrev-2021.png"
+  journal: "Chemical Reviews"
+  title: "Quantum Chemistry Calculations for Metabolomics"
+  doi: "10.1021/acs.chemrev.0c00901"

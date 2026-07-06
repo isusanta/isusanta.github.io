@@ -9,6 +9,71 @@ redirect_from:
 
 Research Associate at Cleveland Clinic developing quantum algorithms, QM/MM methods, and QM/ML workflows for problems in chemical energetics, enzyme catalysis, and metabolomics.
 
+## Featured Work
+
+<div class="cover-gallery">
+{% for c in site.data.covers %}
+  <a class="cover-card"{% if c.doi %} href="https://doi.org/{{ c.doi }}"{% endif %}>
+    <img src="/images/covers/{{ c.image }}" alt="{{ c.title }}" loading="lazy">
+    <span class="cover-meta">
+      <span class="cover-journal">{{ c.journal }}</span>
+      <span class="cover-title">{{ c.title }}</span>
+    </span>
+  </a>
+{% endfor %}
+</div>
+
+<style>
+.cover-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.4em;
+  margin: 1em 0 2em;
+}
+.cover-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  color: inherit;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.cover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+.cover-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+.cover-meta { padding: 0.6em 0.75em 0.8em; }
+.cover-journal {
+  display: block;
+  font-weight: 700;
+  font-size: 0.78em;
+  color: #006d77;
+  margin-bottom: 0.25em;
+}
+.cover-title {
+  display: block;
+  font-size: 0.78em;
+  line-height: 1.35;
+  color: #444;
+}
+@media (prefers-color-scheme: dark) {
+  .cover-card { background: #1e2a2c; box-shadow: 0 2px 10px rgba(0,0,0,0.4); }
+  .cover-card img { border-bottom-color: #2c3a3c; }
+  .cover-title { color: #cbd5d6; }
+}
+</style>
+
 ## Career
 
 | Period | Position | Institution |
