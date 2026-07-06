@@ -9,10 +9,9 @@ author_profile: true
 <p>Also see my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a> (637 citations, July 2026).</p>
 {% endif %}
 
-{% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
-
+{% comment %} Entries render in file order (newest first) — publications.yml is maintained reverse-chronologically. No Liquid sort: same-year entries would reshuffle nondeterministically. {% endcomment %}
 <ol reversed class="publication-list">
-{% for pub in sorted_pubs %}
+{% for pub in site.data.publications %}
   <li>
     <span class="pub-title">{{ pub.title }}</span><br>
     {% if pub.type == "book_chapter" %}<span class="pub-tag">(Book chapter)</span> {% endif %}{{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
