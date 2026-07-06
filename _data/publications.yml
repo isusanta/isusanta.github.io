@@ -2,6 +2,13 @@
 # type: "journal" (includes arXiv preprints) | "book_chapter"
 # Order: reverse chronological within each type.
 
+- title: "Quantum Computations on Fusion Blanket Molten Salts"
+  authors: "Susanta Das, Thiago J. Pinheiro Dos Santos, Subhamoy Bhowmik, Milana Bazayeva, Zhen Li, Akhil Shajan, Danil Kaliakin, Fangchun Liang, Vyacheslav S. Bryantsev, Al Geist, Abigail McClain Gomez, Thaddeus Pellegrini, Robert Walkup, Seetharami R. Seelam, Mario Motta, Kenneth M. Merz Jr., Thomas Beck"
+  venue: "arXiv:2606.30402 (2026)"
+  year: 2026
+  doi: "10.48550/arXiv.2606.30402"
+  type: "journal"
+
 - title: "Protein-Ligand Free Energy Perturbation on Quantum Hardware"
   authors: "Zhen Li, Milana Bazayeva, Thaddeus Pellegrini, Mario Motta, Subhamoy Bhowmik, Susanta Das, Danil Kaliakin, Fangchun Liang, Akhil Shajan, and Kenneth M. Merz Jr."
   venue: "arXiv:2604.09857 (2026)"

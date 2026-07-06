@@ -39,7 +39,7 @@ Supervisor: Prof. Sourav Pal. Doctoral thesis: *Theoretical Investigation on Str
 
 ## Publications
 
-26 peer-reviewed publications (24 journal articles and preprints, 2 book chapters); 637 citations, h-index 15 ([Google Scholar]({{ site.author.googlescholar }}), July 2026). See the [full publication list](/publications/) for titles, venues, and DOIs.
+27 peer-reviewed publications (25 journal articles and preprints, 2 book chapters); 637 citations, h-index 15 ([Google Scholar]({{ site.author.googlescholar }}), July 2026). See the [full publication list](/publications/) for titles, venues, and DOIs.
 
 ---
 
