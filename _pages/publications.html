@@ -11,13 +11,19 @@ author_profile: true
 
 {% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
 
-<ol reversed>
+<ol reversed class="publication-list">
 {% for pub in sorted_pubs %}
   <li>
-    {% if pub.type == "book_chapter" %}<strong>(BOOK CHAPTER)</strong> {% endif %}{{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
-    &ldquo;{{ pub.title }}.&rdquo;
+    <span class="pub-title">{{ pub.title }}</span><br>
+    {% if pub.type == "book_chapter" %}<span class="pub-tag">(Book chapter)</span> {% endif %}{{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
     <em>{{ pub.venue }}</em>.
     <a href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>
   </li>
 {% endfor %}
 </ol>
+
+<style>
+.publication-list li { margin-bottom: 1.25em; line-height: 1.5; }
+.publication-list .pub-title { font-weight: 700; font-size: 1.05em; }
+.publication-list .pub-tag { font-weight: 600; color: #006d77; }
+</style>
