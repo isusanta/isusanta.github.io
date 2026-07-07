@@ -24,3 +24,6 @@ package-lock.json
 
 # Local build notes — not for the public repo
 CLAUDE.md
+
+# local helper, not for site
+push.sh
