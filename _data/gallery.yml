@@ -3,6 +3,9 @@
 # - image: filename inside images/gallery/
 # - caption: text shown under the photo
 
+- image: "quantum-center-2023.jpg"
+  caption: "Cleveland Clinic Quantum Computer Center, Cleveland — October 2023"
+
 - image: "merz-picnic-2023.jpg"
   caption: "Merz Lab group barbecue, Patriarche Park, East Lansing — August 2023"
 
