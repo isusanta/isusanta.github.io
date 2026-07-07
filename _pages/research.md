@@ -19,17 +19,11 @@ My current research applies near-term quantum hardware to electronic structure p
 
 At Bar-Ilan University, with Prof. Dan T. Major, I developed EnzyDock, a CHARMM-based QM/MM docking code for modeling multiple reactive states along enzymatic reaction coordinates. Applications include terpene synthases (selinadiene and limonene synthase), Diels-Alder reactions, and racemases. A separate study on QM region size convergence in DNA proton transfer established practical guidelines for QM/MM system construction (*J. Chem. Theory Comput.* 2018, 2019).
 
-## Computational NMR and CCS Prediction
+## Computational NMR, CCS Prediction, and Metabolite Elucidation
 
 ![QM/ML workflow for collisional cross section prediction](/images/research/ccs.png){: .align-right style="width:340px"}
 
-With Prof. Kenneth M. Merz Jr. at Michigan State University, I built combined quantum mechanics and machine learning (QM/ML) pipelines to predict nuclear magnetic resonance (NMR) chemical shifts and ion mobility collisional cross sections (CCS) for metabolite identification. These predictions support structure elucidation in untargeted metabolomics (*Anal. Chem.* 2020; *J. Am. Soc. Mass Spectrom.* 2022; *J. Chem. Inf. Model.* 2023, 2024).
-
-## Conformational Clustering and Metabolite Elucidation
-
-![AutoGraph conformational clustering](/images/research/metabolomics.png){: .align-left style="width:300px"}
-
-To make conformational analysis reproducible, I developed AutoGraph, an automated, graph-based clustering algorithm for molecular dynamics ensembles. This work is part of a broader QM/ML metabolomics program reviewed in *Chem. Rev.* 2025, and feeds the POMICS web portal (pomics.org) for metabolite characterization.
+With Prof. Kenneth M. Merz Jr. at Michigan State University, I built combined quantum mechanics and machine learning (QM/ML) pipelines to predict nuclear magnetic resonance (NMR) chemical shifts and ion mobility collisional cross sections (CCS) for metabolite identification. These predictions support structure elucidation in untargeted metabolomics (*Anal. Chem.* 2020; *J. Am. Soc. Mass Spectrom.* 2022; *J. Chem. Inf. Model.* 2023, 2024). To make conformational analysis reproducible, I also developed AutoGraph, an automated, graph-based clustering algorithm for molecular dynamics ensembles. This work is part of a broader QM/ML metabolomics program reviewed in *Chem. Rev.* 2025, and feeds the POMICS web portal (pomics.org) for metabolite characterization.
 
 ## Nanocluster Catalysis
 
