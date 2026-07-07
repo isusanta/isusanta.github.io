@@ -9,7 +9,7 @@ My work sits at the intersection of quantum computing, quantum chemistry, and bi
 
 ## Quantum Computing for Chemistry
 
-![EWF-SQD workflow for FLiBe molten salt clusters](/images/research/quantum.png){: .align-right style="width:320px"}
+![EWF-SQD workflow for FLiBe molten salt clusters](/images/research/quantumFlibe.jpeg){: .align-right style="width:320px"}
 
 My current research applies near-term quantum hardware to electronic structure problems in chemistry. I implement the Embedded Wavefunction, Sample-based Quantum Diagonalization (EWF-SQD) pipeline on IBM quantum processors, in active collaboration with IBM Research and the Merz group. The current benchmark target is FLiBe (LiF-BeF2) molten salt clusters relevant to advanced nuclear reactors; results recover relative energies within 0.7 kcal/mol of classical full configuration interaction (FCI), including strongly multi-reference cases. Parallel work extends quantum-centric methods to protein-ligand free energy perturbation (FEP) and intermolecular interactions.
 
