@@ -1,0 +1,54 @@
+---
+layout: archive
+title: "Gallery"
+permalink: /gallery/
+author_profile: true
+---
+
+<div class="photo-gallery">
+{% for g in site.data.gallery %}
+  <figure class="photo-card">
+    <img src="/images/gallery/{{ g.image }}" alt="{{ g.caption }}" loading="lazy">
+    <figcaption>{{ g.caption }}</figcaption>
+  </figure>
+{% endfor %}
+</div>
+
+<style>
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+.photo-card {
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+.photo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+.photo-card figcaption {
+  padding: 0.7em 0.85em 0.9em;
+  font-size: 0.82em;
+  line-height: 1.4;
+  color: #444;
+}
+@media (prefers-color-scheme: dark) {
+  .photo-card { background: #1e2a2c; box-shadow: 0 2px 10px rgba(0,0,0,0.4); }
+  .photo-card img { border-bottom-color: #2c3a3c; }
+  .photo-card figcaption { color: #cbd5d6; }
+}
+</style>

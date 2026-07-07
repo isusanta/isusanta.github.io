@@ -1,0 +1,19 @@
+# Photo gallery — Susanta Das
+# One block per image in images/gallery/.
+# - image: filename inside images/gallery/
+# - caption: text shown under the photo
+
+- image: "merz-picnic-2023.jpg"
+  caption: "Merz Lab group barbecue, Patriarche Park, East Lansing — August 2023"
+
+- image: "merz-lunch-2023.jpg"
+  caption: "Merz Group lunch, Sansu Sushi, East Lansing — July 2023"
+
+- image: "krakow-cttc-2013.jpg"
+  caption: "Poster presentation, CTTC-VI International Conference on Current Trends in Theoretical Chemistry, Krakow, Poland — September 2013"
+
+- image: "tcs-symposium-2014.jpg"
+  caption: "Theoretical Chemistry Symposium, CSIR-National Chemical Laboratory, Pune — December 2014"
+
+- image: "phd-defense-2015.jpg"
+  caption: "Ph.D. defense, Savitribai Phule Pune University — August 2015"
