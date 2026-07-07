@@ -15,7 +15,7 @@ My current research applies near-term quantum hardware to electronic structure p
 
 ## QM/MM and Enzyme Catalysis
 
-![EnzyDock QM/MM docking and QM region convergence](/images/research/qmmm.png){: .align-left style="width:300px"}
+![EnzyDock QM/MM docking and QM region convergence](/images/research/images_large_ct-2017-00964f_0009.jpeg){: .align-left style="width:300px"}
 
 At Bar-Ilan University, with Prof. Dan T. Major, I developed EnzyDock, a CHARMM-based QM/MM docking code for modeling multiple reactive states along enzymatic reaction coordinates. Applications include terpene synthases (selinadiene and limonene synthase), Diels-Alder reactions, and racemases. A separate study on QM region size convergence in DNA proton transfer established practical guidelines for QM/MM system construction (*J. Chem. Theory Comput.* 2018, 2019).
 
