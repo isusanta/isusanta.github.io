@@ -9,6 +9,69 @@ redirect_from:
 
 Research Associate at Cleveland Clinic developing quantum algorithms, QM/MM methods, and QM/ML workflows for problems in chemical energetics, enzyme catalysis, and metabolomics.
 
+<div class="news-hero">
+  <span class="news-badge">★ In the News · July 2026</span>
+  <h2 class="news-headline">First-Ever Quantum-Computer Calculations of Fusion Reactor Materials</h2>
+  <p class="news-text">Our team at Cleveland Clinic, Oak Ridge National Laboratory, and IBM reported the first known quantum-computer calculations of fusion blanket molten salts (FLiBe), a key step toward tritium extraction for fusion energy. I am first author on the study.</p>
+  <div class="news-links">
+    <a class="news-btn" href="https://newsroom.ibm.com/2026-07-06-oak-ridge-national-lab,-cleveland-clinic,-and-ibm-achieve-first-known-computations-of-fusion-materials-on-a-quantum-computer">IBM Newsroom →</a>
+    <a class="news-btn" href="https://www.ornl.gov/news/oak-ridge-national-lab-cleveland-clinic-and-ibm-achieve-first-known-computations-fusion">Oak Ridge National Lab →</a>
+    <a class="news-btn news-btn-solid" href="https://doi.org/10.48550/arXiv.2606.30402">Read the Preprint →</a>
+  </div>
+</div>
+
+<style>
+.news-hero {
+  background: linear-gradient(135deg, #006d77 0%, #00363d 100%);
+  color: #fff;
+  border-radius: 14px;
+  padding: 1.6em 1.8em 1.7em;
+  margin: 1.2em 0 2em;
+  box-shadow: 0 10px 30px rgba(0,54,61,0.28);
+}
+.news-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.16);
+  color: #fff;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.35em 0.8em;
+  border-radius: 999px;
+  margin-bottom: 0.7em;
+}
+.news-headline {
+  color: #fff !important;
+  margin: 0.1em 0 0.4em;
+  font-size: 1.5em;
+  line-height: 1.2;
+  border: none;
+}
+.news-text {
+  color: #e6f2f3;
+  font-size: 0.95em;
+  line-height: 1.55;
+  margin: 0 0 1.1em;
+  max-width: 60ch;
+}
+.news-links { display: flex; flex-wrap: wrap; gap: 0.7em; }
+.news-btn {
+  display: inline-block;
+  text-decoration: none !important;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #fff !important;
+  padding: 0.55em 1.1em;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 8px;
+  transition: background 0.16s ease, transform 0.16s ease;
+}
+.news-btn:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+.news-btn-solid { background: #fff; color: #006d77 !important; border-color: #fff; }
+.news-btn-solid:hover { background: #e6f2f3; }
+</style>
+
 ## Featured Work
 
 <div class="cover-gallery">
