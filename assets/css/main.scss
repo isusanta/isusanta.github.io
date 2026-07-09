@@ -23,6 +23,14 @@ html, body, p, li, td, th, .page__content {
   color: #006d77;
 }
 
+/* Masthead: site name and nav links share the headline face */
+.site-title, .site-subtitle, .greedy-nav a {
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  letter-spacing: -0.01em;
+}
+.site-title { font-weight: 700; }
+.greedy-nav a { font-weight: 500; }
+
 .page__content h2 { line-height: 1.15; }
 
 /* Section headings in deep teal, matching publication titles */
