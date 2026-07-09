@@ -137,12 +137,120 @@ redirect_from:
 
 ## Career
 
-| Period | Position | Institution |
-|---|---|---|
-| Oct 2023 – present | Research Associate | Cleveland Clinic, Cleveland, OH, USA |
-| Apr 2019 – Oct 2023 | Postdoctoral Fellow | Michigan State University, East Lansing, MI, USA |
-| Aug 2015 – Apr 2019 | Postdoctoral Research Fellow | Bar-Ilan University, Ramat-Gan, Israel |
-| Jan 2010 – Aug 2015 | Doctoral Researcher | CSIR-NCL / AcSIR, Pune, India |
+<ol class="career">
+{% for job in site.data.career %}
+  <li class="career-item{% if job.current %} career-item--current{% endif %}">
+    <span class="career-logo">
+      <img src="/images/logos/{{ job.logo }}" alt="{{ job.institution }} logo" loading="lazy">
+    </span>
+    <span class="career-body">
+      <span class="career-period">
+        {{ job.period }}
+        {% if job.current %}<span class="career-dot" aria-hidden="true"></span>{% endif %}
+      </span>
+      <span class="career-role">{{ job.role }}</span>
+      <span class="career-inst">{{ job.institution }}</span>
+      <span class="career-loc">{{ job.location }}</span>
+    </span>
+  </li>
+{% endfor %}
+</ol>
+
+<style>
+.career {
+  list-style: none;
+  margin: 1.2em 0 2.4em;
+  padding: 0 0 0 0.4em;
+  position: relative;
+}
+/* the rail */
+.career::before {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 12px;
+  bottom: 12px;
+  width: 2px;
+  background: linear-gradient(180deg, #006d77 0%, #006d77 55%, rgba(0,109,119,0.15) 100%);
+}
+.career-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.1em;
+  margin: 0 0 1.1em;
+  padding: 0;
+}
+.career-logo {
+  flex: 0 0 auto;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e3e8e9;
+  box-shadow: 0 2px 8px rgba(0,54,61,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.career-item:hover .career-logo {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,54,61,0.20);
+}
+.career-logo img {
+  max-width: 78%;
+  max-height: 78%;
+  object-fit: contain;
+  display: block;
+}
+.career-body { display: flex; flex-direction: column; min-width: 0; }
+.career-period {
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #006d77;
+  margin-bottom: 0.18em;
+}
+.career-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 0.45em;
+  border-radius: 50%;
+  background: #2e9e5b;
+  vertical-align: 1px;
+  box-shadow: 0 0 0 0 rgba(46,158,91,0.7);
+  animation: career-pulse 2.2s infinite;
+}
+@keyframes career-pulse {
+  70% { box-shadow: 0 0 0 7px rgba(46,158,91,0); }
+  100% { box-shadow: 0 0 0 0 rgba(46,158,91,0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .career-dot { animation: none; }
+  .career-item:hover .career-logo { transform: none; }
+}
+.career-role {
+  font-weight: 600;
+  font-size: 1.02em;
+  line-height: 1.25;
+}
+.career-inst { font-size: 0.95em; line-height: 1.35; }
+.career-loc { font-size: 0.82em; color: #6b7778; margin-top: 0.1em; }
+
+@media (max-width: 600px) {
+  .career::before { display: none; }
+  .career-item { gap: 0.9em; }
+  .career-logo { width: 58px; height: 58px; border-radius: 12px; }
+}
+@media (prefers-color-scheme: dark) {
+  .career-logo { border-color: #33474a; box-shadow: 0 2px 8px rgba(0,0,0,0.45); }
+  .career-loc { color: #9fb0b2; }
+}
+</style>
 
 ## Research Overview
 

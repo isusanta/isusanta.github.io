@@ -1,0 +1,30 @@
+# Career timeline — Susanta Das
+# Rendered on the homepage (_pages/about.md), newest first.
+# - logo: filename inside images/logos/
+# - period / role / institution / location
+# - current: true  -> shows the "Present" pulse dot
+
+- logo: "cleveland-clinic.png"
+  period: "Oct 2023 — Present"
+  role: "Research Associate"
+  institution: "Cleveland Clinic"
+  location: "Cleveland, Ohio, USA"
+  current: true
+
+- logo: "michigan-state.png"
+  period: "Apr 2019 — Oct 2023"
+  role: "Postdoctoral Fellow"
+  institution: "Michigan State University"
+  location: "East Lansing, Michigan, USA"
+
+- logo: "bar-ilan.png"
+  period: "Aug 2015 — Apr 2019"
+  role: "Postdoctoral Research Fellow"
+  institution: "Bar-Ilan University"
+  location: "Ramat-Gan, Israel"
+
+- logo: "csir-ncl.png"
+  period: "Jan 2010 — Aug 2015"
+  role: "Doctoral Researcher"
+  institution: "CSIR-National Chemical Laboratory / AcSIR"
+  location: "Pune, India"
