@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Susanta Das"
+title                    : "Dr. Susanta Das"
 title_separator          : "-"
 name                     : &name "Susanta Das"
 description              : &description "Computational Chemist | Quantum Computing | QM/MM | Cleveland Clinic"
@@ -23,7 +23,7 @@ repository               : "isusanta/isusanta.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Susanta Das"
+  name             : "Susanta Das, PhD"
   pronouns         : # example: "she/her"
   bio              : "Research Associate at Cleveland Clinic, United States"
   location         : "Cleveland, Ohio, USA"
