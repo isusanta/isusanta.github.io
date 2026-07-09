@@ -22,7 +22,7 @@ repository               : "isusanta/isusanta.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Susanta Das"
   pronouns         : # example: "she/her"
   bio              : "Research Associate at Cleveland Clinic, United States"
