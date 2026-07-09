@@ -3,6 +3,9 @@
 # - image: filename inside images/gallery/
 # - caption: text shown under the photo
 
+- image: "hernandez-cleveland-2026.jpg"
+  caption: "With Prof. Rigoberto Hernandez, President of the American Chemical Society, and the Merz group at Cleveland Clinic — April 2026"
+
 - image: "quantum-center-2023.jpg"
   caption: "Cleveland Clinic Quantum Computer Center, Cleveland — October 2023"
 
