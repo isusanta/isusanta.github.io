@@ -9,6 +9,20 @@
   doi: "10.48550/arXiv.2606.30402"
   type: "journal"
 
+- title: "Quantum-Centric Alchemical Free Energy Calculations"
+  authors: "Milana Bazayeva, Zhen Li, Danil Kaliakin, Fangchun Liang, Akhil Shajan, Susanta Das, and Kenneth M. Merz Jr."
+  venue: "J. Chem. Theory Comput. 2026, ASAP"
+  year: 2026
+  doi: "10.1021/acs.jctc.6c00526"
+  type: "journal"
+
+- title: "Molecular Quantum Computations on a Protein"
+  authors: "Akhil Shajan, Danil Kaliakin, Fangchun Liang, Thaddeus Pellegrini, Hakan Doga, Subhamoy Bhowmik, Susanta Das, Antonio Mezzacapo, Mario Motta, and Kenneth M. Merz Jr."
+  venue: "J. Chem. Theory Comput. 2026, 22, 6041"
+  year: 2026
+  doi: "10.1021/acs.jctc.6c00364"
+  type: "journal"
+
 - title: "Protein-Ligand Free Energy Perturbation on Quantum Hardware"
   authors: "Zhen Li, Milana Bazayeva, Thaddeus Pellegrini, Mario Motta, Subhamoy Bhowmik, Susanta Das, Danil Kaliakin, Fangchun Liang, Akhil Shajan, and Kenneth M. Merz Jr."
   venue: "arXiv:2604.09857 (2026)"
@@ -16,25 +30,11 @@
   doi: "10.48550/arXiv.2604.09857"
   type: "journal"
 
-- title: "Molecular Quantum Computations on a Protein"
-  authors: "Akhil Shajan, Danil Kaliakin, Fangchun Liang, Thaddeus Pellegrini, Hakan Doga, Subhamoy Bhowmik, Susanta Das, Antonio Mezzacapo, Mario Motta, and Kenneth M. Merz Jr."
-  venue: "arXiv:2512.17130 (2025)"
-  year: 2025
-  doi: "10.48550/arXiv.2512.17130"
-  type: "journal"
-
 - title: "Exploring the Frontiers of Computational NMR: Methods, Applications, and Challenges"
   authors: "Susanta Das and Kenneth M. Merz Jr."
   venue: "Chem. Rev. 2025, 125, 9256"
   year: 2025
   doi: "10.1021/acs.chemrev.5c00259"
-  type: "journal"
-
-- title: "Quantum-Centric Alchemical Free Energy Calculations"
-  authors: "Milana Bazayeva, Zhen Li, Danil Kaliakin, Fangchun Liang, Akhil Shajan, Susanta Das, and Kenneth M. Merz Jr."
-  venue: "arXiv:2506.20825 (2025)"
-  year: 2025
-  doi: "10.48550/arXiv.2506.20825"
   type: "journal"
 
 - title: "Toward Quantum-Centric Simulations of Extended Molecules: Sample-Based Quantum Diagonalization Enhanced with Density Matrix Embedding Theory"
