@@ -1,12 +1,29 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Exo+2:wght@400;600;700&display=swap');
 
 html, body, p, li, td, th, .page__content {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
+
+/* Headlines in Exo 2 (Grimme group / Uni Bonn house face), tight and heavy */
+.page__title,
+.page__content h1, .page__content h2, .page__content h3, .page__content h4,
+.archive__item-title, .author__name {
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.page__title {
+  font-size: 2.6em;
+  line-height: 1.08;
+  color: #006d77;
+}
+
+.page__content h2 { line-height: 1.15; }
 
 /* Section headings in deep teal, matching publication titles */
 .page__content h2, .page__content h3 {
