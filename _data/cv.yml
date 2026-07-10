@@ -1,0 +1,155 @@
+# CV data — Susanta Das
+# Rendered by _pages/cv.html. Single source for the whole CV page.
+#
+# stats        -> the four numbers in the metrics band (update quarterly)
+# appointments -> research positions, newest first; logo = filename in images/logos/
+# education    -> degrees, newest first
+# awards       -> honors and fellowships
+# skills       -> chip groups, one row per domain
+# service      -> peer review summary paragraph
+
+stats:
+  - value: "27"
+    label: "Publications"
+  - value: "637"
+    label: "Citations"
+  - value: "15"
+    label: "h-index"
+  - value: "41"
+    label: "Reviews"
+
+# Citation figure and h-index are from Google Scholar, July 2026.
+# NOTE: the citation count is ALSO hardcoded in _pages/publications.html (line 9). Keep in sync.
+
+appointments:
+  - logo: "cleveland-clinic.png"
+    role: "Research Associate"
+    institution: "Cleveland Clinic"
+    department: "Cleveland Clinic Foundation, Cleveland Clinic Research"
+    location: "Cleveland, Ohio, USA"
+    period: "Oct 2023 — Present"
+    current: true
+    detail: >
+      Center for Computational Life Sciences (CLS). Research spans quantum computing for
+      electronic structure and molecular energetics (EWF-SQD pipeline for FLiBe molten salt
+      clusters on IBM quantum hardware; ORNL project CHM243) and QM/ML methods for
+      metabolomics and precision medicine.
+
+  - logo: "michigan-state.png"
+    role: "Postdoctoral Fellow"
+    institution: "Michigan State University"
+    department: "Department of Chemistry"
+    location: "East Lansing, Michigan, USA"
+    period: "Apr 2019 — Oct 2023"
+    supervisor: "Prof. Kenneth M. Merz Jr."
+    detail: >
+      QM/ML spectroscopy workflows for metabolomics (NMR chemical shift and collisional cross
+      section prediction); AutoGraph conformational clustering algorithm; web server
+      development for metabolomics characterization (pomics.org).
+
+  - logo: "bar-ilan.png"
+    role: "Postdoctoral Research Fellow"
+    institution: "Bar-Ilan University"
+    department: "Department of Chemistry"
+    location: "Ramat-Gan, Israel"
+    period: "Aug 2015 — Apr 2019"
+    supervisor: "Prof. Dan Thomas Major"
+    detail: >
+      Hybrid QM/MM simulation of enzyme-catalysed terpene biosynthesis (selinadiene synthase,
+      limonene synthase); development of the CHARMM-based QM/MM docking code EnzyDock; QM
+      region size convergence in QM/MM; homology modelling.
+
+  - logo: "csir-ncl.png"
+    role: "Doctoral Researcher"
+    institution: "CSIR-National Chemical Laboratory (NCL)"
+    department: "Affiliated with AcSIR"
+    location: "Pune, Maharashtra, India"
+    period: "Jan 2010 — Aug 2015"
+    supervisor: "Prof. Sourav Pal"
+    detail: >
+      Doctoral thesis: <em>Theoretical Investigation on Structure and Reactivity Properties of
+      Molecules and Metal Clusters: A Conceptual DFT and Ab Initio Molecular Dynamics
+      Approach.</em> Ph.D. in Chemistry awarded August 2015.
+
+education:
+  - degree: "Ph.D."
+    field: "Chemistry"
+    institution: "CSIR-National Chemical Laboratory / AcSIR"
+    location: "Pune, India"
+    year: "2015"
+
+  - degree: "M.Sc."
+    field: "Chemistry"
+    institution: "Visva-Bharati (A Central University)"
+    location: "Santiniketan, India"
+    year: "2009"
+
+  - degree: "B.Sc. (Hons.)"
+    field: "Chemistry"
+    institution: "University of Burdwan"
+    location: "Burdwan, India"
+    year: "2007"
+
+awards:
+  - title: "CSIR-UGC National Eligibility Test (NET)"
+    detail: "Junior Research Fellowship (JRF), All India Rank 46"
+    year: "2009"
+
+  - title: "Graduate Aptitude Test in Engineering (GATE)"
+    detail: "Qualified"
+    year: "2009"
+
+skills:
+  - group: "Quantum Computing"
+    items:
+      - "IBM Quantum Platform"
+      - "Qiskit"
+      - "Sample-based Quantum Diagonalization (SQD)"
+      - "EWF-SQD pipeline"
+      - "Reduced density matrix methods"
+
+  - group: "Electronic Structure / QM"
+    items:
+      - "GAUSSIAN"
+      - "QUICK"
+      - "GAMESS"
+      - "QCHEM"
+      - "TURBOMOLE"
+      - "MOLPRO"
+      - "DEMON-2K"
+
+  - group: "MD / QM-MM"
+    items:
+      - "AMBER"
+      - "CHARMM"
+      - "NAMD"
+      - "CHARMM-QCHEM interface"
+
+  - group: "Programming"
+    items:
+      - "Python"
+      - "Fortran"
+      - "Bash/Zsh"
+
+  - group: "Workflow / HPC"
+    items:
+      - "Snakemake"
+      - "SLURM"
+      - "IBM Quantum Cloud"
+      - "OLCF (Oak Ridge)"
+
+  - group: "Visualization"
+    items:
+      - "PyMOL"
+      - "VMD"
+      - "CHIMERA"
+      - "AVOGADRO"
+      - "MOLDEN"
+      - "ChemDraw"
+      - "VESTA"
+
+service: >
+  41 review assignments across 14 journals (2017-2026), including <em>J. Chem. Inf. Model.</em>,
+  <em>ACS Omega</em>, <em>J. Org. Chem.</em>, <em>Nanoscale</em>, <em>Struct. Chem.</em>,
+  <em>Theor. Chem. Acc.</em>, <em>J. Comput.-Aided Mol. Des.</em>, <em>J. Mol. Liq.</em>, and
+  MDPI journals.

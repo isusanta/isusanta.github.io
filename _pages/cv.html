@@ -1,0 +1,576 @@
+---
+layout: single
+title: "Curriculum Vitae"
+permalink: /cv/
+author_profile: false
+redirect_from:
+  - /resume
+---
+
+<div class="cv">
+
+  <!-- ===== Header band ===== -->
+  <header class="cv-head">
+    <div class="cv-head__text">
+      <h1 class="cv-name">{{ site.author.name }}</h1>
+      <p class="cv-role">{{ site.author.bio }}</p>
+      <ul class="cv-contact">
+        {% if site.author.email %}
+          <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> {{ site.author.email }}</a></li>
+        {% endif %}
+        {% if site.author.googlescholar %}
+          <li><a href="{{ site.author.googlescholar }}" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+        {% endif %}
+        {% if site.author.github %}
+          <li><a href="https://github.com/{{ site.author.github }}" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+        {% endif %}
+        {% if site.author.linkedin %}
+          <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    <button type="button" class="cv-print" onclick="window.print()">
+      <i class="fas fa-download" aria-hidden="true"></i> Save as PDF
+    </button>
+  </header>
+
+  <!-- ===== Stat band ===== -->
+  <div class="cv-stats">
+    {% for stat in site.data.cv.stats %}
+      <div class="cv-stat">
+        <span class="cv-stat__value">{{ stat.value }}</span>
+        <span class="cv-stat__label">{{ stat.label }}</span>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- ===== Rail + content ===== -->
+  <div class="cv-body">
+
+    <nav class="cv-rail" aria-label="CV sections">
+      <ul>
+        <li><a href="#appointments">Appointments</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#service">Service</a></li>
+      </ul>
+    </nav>
+
+    <div class="cv-main">
+
+      <section id="appointments">
+        <h2 class="cv-h2">Research Appointments</h2>
+        {% for job in site.data.cv.appointments %}
+          <article class="cv-card cv-card--job{% if job.current %} cv-card--current{% endif %}">
+            <span class="cv-card__logo">
+              <img src="/images/logos/{{ job.logo }}" alt="{{ job.institution }} logo" loading="lazy">
+            </span>
+            <div class="cv-card__body">
+              <div class="cv-card__top">
+                <h3 class="cv-card__role">{{ job.role }}</h3>
+                <span class="cv-card__period">{{ job.period }}</span>
+              </div>
+              <p class="cv-card__inst">
+                {{ job.institution }}<span class="cv-sep">·</span><span class="cv-card__loc">{{ job.location }}</span>
+              </p>
+              {% if job.department %}<p class="cv-card__dept">{{ job.department }}</p>{% endif %}
+              {% if job.supervisor %}<p class="cv-card__sup">Supervisor: {{ job.supervisor }}</p>{% endif %}
+              <p class="cv-card__detail">{{ job.detail }}</p>
+            </div>
+          </article>
+        {% endfor %}
+      </section>
+
+      <section id="education">
+        <h2 class="cv-h2">Education</h2>
+        <div class="cv-edu">
+          {% for deg in site.data.cv.education %}
+            <article class="cv-card cv-card--edu">
+              <span class="cv-degree">{{ deg.degree }}</span>
+              <div class="cv-card__body">
+                <h3 class="cv-card__role">{{ deg.field }}</h3>
+                <p class="cv-card__inst">{{ deg.institution }}</p>
+                <p class="cv-card__loc">{{ deg.location }}</p>
+              </div>
+              <span class="cv-card__period">{{ deg.year }}</span>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2 class="cv-h2">Publications</h2>
+        <p class="cv-prose">
+          27 peer-reviewed publications (25 journal articles and preprints, 2 book chapters);
+          {{ site.data.cv.stats[1].value }} citations, h-index {{ site.data.cv.stats[2].value }}
+          (<a href="{{ site.author.googlescholar }}" rel="noopener">Google Scholar</a>, July 2026).
+          See the <a href="/publications/">full publication list</a> for titles, venues, and DOIs.
+        </p>
+      </section>
+
+      <section id="awards">
+        <h2 class="cv-h2">Honors and Awards</h2>
+        <ul class="cv-awards">
+          {% for award in site.data.cv.awards %}
+            <li>
+              <span class="cv-award__year">{{ award.year }}</span>
+              <span class="cv-award__body">
+                <strong>{{ award.title }}</strong>
+                <span class="cv-award__detail">{{ award.detail }}</span>
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2 class="cv-h2">Technical Skills</h2>
+        {% for row in site.data.cv.skills %}
+          <div class="cv-skill">
+            <h3 class="cv-skill__group">{{ row.group }}</h3>
+            <ul class="cv-chips">
+              {% for item in row.items %}<li>{{ item }}</li>{% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </section>
+
+      <section id="service">
+        <h2 class="cv-h2">Peer Review Service</h2>
+        <p class="cv-prose">{{ site.data.cv.service }}</p>
+      </section>
+
+    </div><!-- /.cv-main -->
+  </div><!-- /.cv-body -->
+</div><!-- /.cv -->
+
+<style>
+/* ============================================================
+   CV page. Styles are scoped to this page: an inline <style>
+   block ships only inside /cv/index.html.
+   ============================================================ */
+
+/* This Academic Pages fork has no `classes: wide`. _sass/layout/_page.scss
+   pins .page to span(10 of 12 last) + prefix/suffix padding above the $large
+   breakpoint (925px). With no author sidebar that leaves a dead gutter.
+   Reclaim the full width here only. */
+@media (min-width: 925px) {
+  .page {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.page__title { display: none; }          /* header band carries the name */
+.page__content { padding-top: 0; }
+
+.cv { max-width: 1000px; }
+
+/* ---------- Header band ---------- */
+.cv-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  padding-bottom: 1.4em;
+  border-bottom: 3px solid #006d77;
+}
+.cv-name {
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: #006d77;
+  margin: 0 0 0.15em;
+}
+.cv-role {
+  font-size: 1.05em;
+  color: #4a5859;
+  margin: 0 0 0.7em;
+}
+.cv-contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1.2em;
+  font-size: 0.86em;
+}
+.cv-contact li { margin: 0; }
+.cv-contact a {
+  color: #5a686a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.cv-contact a:hover { color: #006d77; border-bottom-color: #006d77; text-decoration: none; }
+.cv-contact i { color: #9aa8aa; margin-right: 0.35em; }
+.cv-contact a:hover i { color: #006d77; }
+
+.cv-print {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.65em 1.25em;
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: #006d77;
+  border: 1px solid #006d77;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.cv-print:hover { background: #00565e; transform: translateY(-1px); }
+
+/* ---------- Stat band ---------- */
+.cv-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 0 0 2.6em;
+  background: #e3e8e9;                    /* shows through as hairline dividers */
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+.cv-stat {
+  background: rgba(0,109,119,0.045);
+  padding: 1.15em 0.6em;
+  text-align: center;
+}
+.cv-stat__value {
+  display: block;
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.9em;
+  line-height: 1;
+  color: #006d77;
+}
+.cv-stat__label {
+  display: block;
+  margin-top: 0.35em;
+  font-size: 0.72em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7778;
+}
+
+/* ---------- Rail + content ---------- */
+.cv-body { display: grid; grid-template-columns: 170px 1fr; gap: 2.5em; }
+
+.cv-rail { align-self: start; position: sticky; top: 5rem; }
+.cv-rail ul { list-style: none; margin: 0; padding: 0; border-left: 2px solid #e3e8e9; }
+.cv-rail li { margin: 0; }
+.cv-rail a {
+  display: block;
+  padding: 0.5em 0 0.5em 1em;
+  margin-left: -2px;
+  border-left: 2px solid transparent;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #7a8688;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease, padding-left 0.15s ease;
+}
+.cv-rail a:hover { color: #006d77; text-decoration: none; }
+.cv-rail a.is-active {
+  color: #006d77;
+  font-weight: 600;
+  border-left-color: #006d77;
+  padding-left: 1.25em;
+}
+
+.cv-main section { scroll-margin-top: 5rem; }
+.cv-main section + section { margin-top: 3em; }
+
+.cv-h2 {
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #006d77;
+  margin: 0 0 1.2em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #e3e8e9;
+}
+
+/* ---------- Cards ---------- */
+.cv-card {
+  background: #fff;
+  border: 1px solid #e6ebec;
+  border-radius: 10px;
+  padding: 1.3em 1.4em;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+.cv-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,42,46,0.08);
+  border-color: #cfdadb;
+}
+
+.cv-card--job { display: flex; gap: 1.2em; align-items: flex-start; }
+.cv-card--job + .cv-card--job { margin-top: 1em; }
+.cv-card--current { border-left: 3px solid #006d77; }
+
+.cv-card__logo {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #e3e8e9;
+  border-radius: 9px;
+  padding: 5px;
+}
+.cv-card__logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.cv-card__body { flex: 1; min-width: 0; }
+.cv-card__top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.cv-card__role {
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-size: 1.12em;
+  font-weight: 600;
+  color: #1f2d2f;
+  margin: 0;
+  line-height: 1.25;
+}
+.cv-card__period {
+  flex-shrink: 0;
+  font-size: 0.78em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #6b7778;
+  white-space: nowrap;
+}
+.cv-card__inst { font-size: 0.95em; color: #33474a; margin: 0.25em 0 0; }
+.cv-sep { margin: 0 0.5em; color: #b9c4c5; }
+.cv-card__loc { font-size: 0.88em; color: #6b7778; }
+.cv-card__dept { font-size: 0.82em; color: #7a8688; margin: 0.15em 0 0; }
+.cv-card__sup { font-size: 0.82em; color: #7a8688; margin: 0.35em 0 0; }
+.cv-card__detail { font-size: 0.9em; line-height: 1.6; color: #4a5859; margin: 0.7em 0 0; }
+
+/* ---------- Education ---------- */
+.cv-edu { display: flex; flex-direction: column; gap: 0.8em; }
+.cv-card--edu { display: flex; align-items: center; gap: 1.2em; padding: 1em 1.4em; }
+.cv-degree {
+  flex-shrink: 0;
+  min-width: 96px;
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-size: 1.05em;
+  font-weight: 700;
+  color: #006d77;
+}
+.cv-card--edu .cv-card__role { font-size: 1em; }
+.cv-card--edu .cv-card__inst { font-size: 0.88em; margin-top: 0.1em; }
+.cv-card--edu .cv-card__loc { display: block; font-size: 0.8em; margin-top: 0.05em; }
+
+/* ---------- Awards ---------- */
+.cv-awards { list-style: none; margin: 0; padding: 0; }
+.cv-awards li { display: flex; gap: 1.4em; padding: 0.9em 0; border-bottom: 1px solid #eef2f2; }
+.cv-awards li:last-child { border-bottom: 0; }
+.cv-award__year {
+  flex-shrink: 0;
+  min-width: 52px;
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #006d77;
+}
+.cv-award__body { display: flex; flex-direction: column; }
+.cv-award__body strong { font-weight: 600; color: #1f2d2f; }
+.cv-award__detail { font-size: 0.88em; color: #6b7778; margin-top: 0.15em; }
+
+/* ---------- Skills ---------- */
+.cv-skill + .cv-skill { margin-top: 1.4em; }
+.cv-skill__group {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7a8688;
+  margin: 0 0 0.6em;
+}
+.cv-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; }
+.cv-chips li {
+  margin: 0;
+  padding: 0.34em 0.8em;
+  font-size: 0.82em;
+  color: #33474a;
+  background: rgba(0,109,119,0.06);
+  border: 1px solid rgba(0,109,119,0.14);
+  border-radius: 20px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.cv-chips li:hover { background: rgba(0,109,119,0.14); color: #006d77; }
+
+.cv-prose { font-size: 0.95em; line-height: 1.65; color: #33474a; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 924px) {
+  .cv-body { grid-template-columns: 1fr; gap: 1.6em; }
+  .cv-rail { position: static; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .cv-rail ul { display: flex; border-left: 0; border-bottom: 2px solid #e3e8e9; }
+  .cv-rail a {
+    white-space: nowrap;
+    padding: 0.5em 0.9em;
+    margin: 0 0 -2px;
+    border-left: 0;
+    border-bottom: 2px solid transparent;
+  }
+  .cv-rail a.is-active { padding-left: 0.9em; border-left: 0; border-bottom-color: #006d77; }
+}
+@media (max-width: 600px) {
+  .cv-name { font-size: 1.9em; }
+  .cv-stats { grid-template-columns: repeat(2, 1fr); }
+  .cv-stat__value { font-size: 1.6em; }
+  .cv-card--job { flex-direction: column; gap: 0.9em; }
+  .cv-card--edu { flex-wrap: wrap; gap: 0.5em 1em; }
+  .cv-degree { min-width: 0; }
+  .cv-card--edu .cv-card__period { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-card, .cv-print { transition: none; }
+  .cv-card:hover, .cv-print:hover { transform: none; }
+}
+
+/* ---------- Dark mode ---------- */
+@media (prefers-color-scheme: dark) {
+  .cv-role { color: #a9b8ba; }
+  .cv-contact a { color: #9fb0b2; }
+  .cv-stats { background: #2c3a3c; }
+  .cv-stat { background: rgba(0,109,119,0.16); }
+  .cv-stat__label { color: #9fb0b2; }
+  .cv-rail ul { border-left-color: #2c3a3c; }
+  .cv-rail a { color: #8f9fa1; }
+  .cv-h2 { border-bottom-color: #2c3a3c; }
+  .cv-card { background: #1d2729; border-color: #2c3a3c; }
+  .cv-card:hover { border-color: #3d5053; box-shadow: 0 6px 20px rgba(0,0,0,0.4); }
+  .cv-card__logo { background: #fff; border-color: #33474a; }
+  .cv-card__role { color: #e6edee; }
+  .cv-card__inst { color: #c3d0d2; }
+  .cv-card__detail { color: #a9b8ba; }
+  .cv-awards li { border-bottom-color: #2c3a3c; }
+  .cv-award__body strong { color: #e6edee; }
+  .cv-chips li { color: #c3d0d2; background: rgba(0,109,119,0.18); border-color: rgba(0,109,119,0.3); }
+  .cv-prose { color: #c3d0d2; }
+  @media (max-width: 924px) {
+    .cv-rail ul { border-bottom-color: #2c3a3c; }
+  }
+}
+
+/* ---------- Print ---------- */
+@media print {
+  .masthead, .page__footer, .page__meta, .cv-rail, .cv-stats, .cv-print, .author__urls-wrapper {
+    display: none !important;
+  }
+  .page, .page__content, .cv { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .cv-body { display: block !important; }
+
+  body, .cv-prose, .cv-card__detail { color: #000 !important; background: #fff !important; }
+  .cv-name { font-size: 22pt; color: #000 !important; }
+  .cv-role, .cv-contact { font-size: 9pt; color: #000 !important; }
+  .cv-contact a { color: #000 !important; border: 0 !important; }
+  .cv-head { border-bottom: 2px solid #000; padding-bottom: 0.5em; }
+
+  .cv-h2 {
+    font-size: 10pt;
+    color: #000 !important;
+    border-bottom: 1px solid #000;
+    margin-top: 1.4em;
+  }
+  .cv-main section + section { margin-top: 1.4em; }
+
+  .cv-card {
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0.4em 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .cv-card--current { border-left: 0 !important; }
+  .cv-card__logo { display: none !important; }
+  .cv-card__role, .cv-card__inst, .cv-degree, .cv-award__year, .cv-award__body strong {
+    color: #000 !important;
+  }
+  .cv-card__period, .cv-card__loc, .cv-card__dept, .cv-card__sup, .cv-award__detail {
+    color: #333 !important;
+  }
+  .cv-card__detail, .cv-prose { font-size: 9pt; }
+
+  .cv-chips li {
+    background: none !important;
+    border: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    color: #000 !important;
+    font-size: 9pt;
+  }
+  .cv-chips li::after { content: ","; }
+  .cv-chips li:last-child::after { content: ""; }
+  .cv-chips { gap: 0 0.35em; }
+  .cv-skill { page-break-inside: avoid; break-inside: avoid; }
+
+  a { text-decoration: none !important; }
+}
+</style>
+
+<script>
+// Scroll-spy for the section rail. Without JS the links still work as plain anchors.
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.cv-rail a'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+
+  var byId = {};
+  links.forEach(function (link) { byId[link.getAttribute('href').slice(1)] = link; });
+
+  var visible = {};
+
+  function paint() {
+    // Highest section currently in view wins, so the rail never flickers
+    // between two neighbours that are both partly on screen.
+    var active = null;
+    Object.keys(visible).forEach(function (id) {
+      if (!visible[id]) return;
+      if (!active || visible[id].top < visible[active].top) active = id;
+    });
+    links.forEach(function (link) { link.classList.remove('is-active'); });
+    if (active && byId[active]) byId[active].classList.add('is-active');
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var id = entry.target.id;
+      visible[id] = entry.isIntersecting ? entry.boundingClientRect : null;
+    });
+    paint();
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+  Object.keys(byId).forEach(function (id) {
+    var section = document.getElementById(id);
+    if (section) observer.observe(section);
+  });
+}());
+</script>
