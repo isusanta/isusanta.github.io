@@ -250,23 +250,79 @@ redirect_from:
   .career-logo { border-color: #33474a; box-shadow: 0 2px 8px rgba(0,0,0,0.45); }
   .career-loc { color: #9fb0b2; }
 }
+
+/* Research Overview bullet list — classic teal diamond marker with soft halo */
+.research-points {
+  list-style: none;
+  margin: 0.55em 0 1.35em;
+  padding-left: 0;
+}
+.research-points li {
+  position: relative;
+  padding-left: 1.85em;
+  margin-bottom: 0.6em;
+  line-height: 1.62;
+}
+.research-points li::before {
+  content: "";
+  position: absolute;
+  left: 0.18em;
+  top: 0.62em;
+  width: 0.5em;
+  height: 0.5em;
+  background: #006d77;
+  transform: rotate(45deg);
+  border-radius: 1.5px;
+  box-shadow: 0 0 0 3px rgba(0,109,119,0.14);
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+.research-points li:hover::before {
+  background: #00858f;
+  box-shadow: 0 0 0 4px rgba(0,109,119,0.20);
+}
+@media (prefers-reduced-motion: reduce) {
+  .research-points li::before { transition: none; }
+}
+@media (prefers-color-scheme: dark) {
+  .research-points li::before {
+    background: #4bb3bd;
+    box-shadow: 0 0 0 3px rgba(75,179,189,0.18);
+  }
+  .research-points li:hover::before {
+    background: #6fc9d2;
+    box-shadow: 0 0 0 4px rgba(75,179,189,0.26);
+  }
+}
 </style>
 
 ## Research Overview
 
 ### Quantum Computing for Chemistry
 
-Current work focuses on near-term quantum hardware for electronic structure. I implement the Embedded Wavefunction-Sample-based Quantum Diagonalization (EWF-SQD) pipeline on IBM quantum processors, in active collaboration with IBM Research and the Merz group. Current benchmark target: FLiBe (LiF-BeF2) molten salt clusters relevant to advanced nuclear reactors. Results demonstrate recovery of relative energies within 0.7 kcal/mol of classical FCI, including strongly multi-reference cases. Parallel work with the Merz group extends quantum-centric methods to protein-ligand free energy perturbation and intermolecular interactions.
+- Implement the Embedded Wavefunction-Sample-based Quantum Diagonalization (EWF-SQD) pipeline on IBM quantum processors, in active collaboration with IBM Research and the Merz group.
+- Benchmark target: FLiBe (LiF-BeF2) molten salt clusters relevant to advanced nuclear reactors.
+- Recover relative energies within 0.7 kcal/mol of classical FCI, including strongly multi-reference cases.
+- Extend quantum-centric methods with the Merz group to protein-ligand free energy perturbation and intermolecular interactions.
+{: .research-points}
 
 ### QM/MM and Enzyme Catalysis
 
-At Bar-Ilan University (with Prof. Dan T. Major), I developed EnzyDock — a CHARMM-based QM/MM docking code for studying multiple reactive states along enzymatic reaction coordinates, applied to terpene synthases, Diels-Alder reactions, and racemases. Separate work on QM region size convergence in DNA proton transfer established practical guidelines for QM/MM system construction (*J. Chem. Theory Comput.* 2018, 2019).
+- Developed EnzyDock at Bar-Ilan University (with Prof. Dan T. Major), a CHARMM-based QM/MM docking code for multiple reactive states along enzymatic reaction coordinates.
+- Applied to terpene synthases, Diels-Alder reactions, and racemases.
+- Established QM region size convergence guidelines for DNA proton transfer (*J. Chem. Theory Comput.* 2018, 2019).
+{: .research-points}
 
 ### Computational NMR and Metabolomics
 
-At Michigan State University (with Prof. Kenneth M. Merz Jr.), I built QM/ML pipelines for NMR chemical shift and collisional cross section (CCS) prediction to support metabolite structure elucidation, along with the AutoGraph conformational clustering algorithm. This work is reviewed in *Chemical Reviews* (2025). Select papers: *Anal. Chem.* 2020, *J. Am. Soc. Mass Spectrom.* 2022, *J. Chem. Inf. Model.* 2023, 2024.
+- Built QM/ML pipelines for NMR chemical shift and collisional cross section (CCS) prediction at Michigan State University (with Prof. Kenneth M. Merz Jr.) to support metabolite structure elucidation.
+- Developed the AutoGraph conformational clustering algorithm.
+- Reviewed in *Chemical Reviews* (2025); select papers *Anal. Chem.* 2020, *J. Am. Soc. Mass Spectrom.* 2022, *J. Chem. Inf. Model.* 2023, 2024.
+{: .research-points}
 
 ### Nanocluster Catalysis
 
-Doctoral research at CSIR-National Chemical Laboratory applied DFT, ab initio MD, and Coupled-Cluster methods to aluminum nanocluster reactivity: dinitrogen activation by Si/P-doped clusters, oxidative addition of C-I bonds, and site selectivity via conceptual DFT reactivity descriptors.
+- Applied DFT, ab initio MD, and Coupled-Cluster methods to aluminum nanocluster reactivity during doctoral research at CSIR-National Chemical Laboratory.
+- Dinitrogen activation by Si/P-doped clusters and oxidative addition of C-I bonds.
+- Site selectivity via conceptual DFT reactivity descriptors.
+{: .research-points}
 
