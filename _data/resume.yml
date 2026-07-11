@@ -31,10 +31,10 @@ appointments:
     period: "Oct 2023 — Present"
     current: true
     detail: >
-      Center for Computational Life Sciences (CLS). Research spans quantum computing for
-      electronic structure and molecular energetics (EWF-SQD pipeline for FLiBe molten salt
-      clusters on IBM quantum hardware; ORNL project CHM243) and QM/ML methods for
-      metabolomics and precision medicine.
+      Center for Computational Life Sciences (CLS). Research spans:
+    points:
+      - "Quantum computing for electronic structure and molecular energetics: EWF-SQD pipeline for FLiBe molten salt clusters on IBM quantum hardware; ORNL project CHM243."
+      - "QM/ML methods for metabolomics and precision medicine."
 
   - logo: "michigan-state.png"
     role: "Postdoctoral Fellow"

@@ -84,7 +84,12 @@ redirect_from:
               </p>
               {% if job.department %}<p class="cv-card__dept">{{ job.department }}</p>{% endif %}
               {% if job.supervisor %}<p class="cv-card__sup">Supervisor: {{ job.supervisor }}</p>{% endif %}
-              <p class="cv-card__detail">{{ job.detail }}</p>
+              {% if job.detail %}<p class="cv-card__detail">{{ job.detail }}</p>{% endif %}
+              {% if job.points %}
+                <ul class="cv-points">
+                  {% for point in job.points %}<li>{{ point }}</li>{% endfor %}
+                </ul>
+              {% endif %}
             </div>
           </article>
         {% endfor %}
@@ -399,6 +404,29 @@ redirect_from:
 .cv-card__dept { font-size: 0.82em; color: #7a8688; margin: 0.15em 0 0; }
 .cv-card__sup { font-size: 0.82em; color: #7a8688; margin: 0.35em 0 0; }
 .cv-card__detail { font-size: 0.9em; line-height: 1.6; color: #4a5859; margin: 0.7em 0 0; }
+/* Diamond-marker detail list (matches landing-page .research-points) */
+.cv-points { list-style: none; margin: 0.55em 0 0; padding-left: 0; }
+.cv-points li {
+  position: relative;
+  padding-left: 1.6em;
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+  line-height: 1.55;
+  color: #4a5859;
+}
+.cv-points li:last-child { margin-bottom: 0; }
+.cv-points li::before {
+  content: "";
+  position: absolute;
+  left: 0.15em;
+  top: 0.5em;
+  width: 0.45em;
+  height: 0.45em;
+  background: #006d77;
+  transform: rotate(45deg);
+  border-radius: 1.5px;
+  box-shadow: 0 0 0 3px rgba(0,109,119,0.14);
+}
 
 /* ---------- Education ---------- */
 .cv-edu { display: flex; flex-direction: column; gap: 0.8em; }
@@ -505,6 +533,8 @@ redirect_from:
   .cv-card__role { color: #e6edee; }
   .cv-card__inst { color: #c3d0d2; }
   .cv-card__detail { color: #a9b8ba; }
+  .cv-points li { color: #a9b8ba; }
+  .cv-points li::before { background: #4bb3bd; box-shadow: 0 0 0 3px rgba(75,179,189,0.18); }
   .cv-awards li { border-bottom-color: #2c3a3c; }
   .cv-award__body strong { color: #e6edee; }
   .cv-chips li { color: #c3d0d2; background: rgba(0,109,119,0.18); border-color: rgba(0,109,119,0.3); }
@@ -522,7 +552,8 @@ redirect_from:
   .page, .page__content, .cv { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
   .cv-body { display: block !important; }
 
-  body, .cv-prose, .cv-card__detail { color: #000 !important; background: #fff !important; }
+  body, .cv-prose, .cv-card__detail, .cv-points li { color: #000 !important; background: #fff !important; }
+  .cv-points li::before { background: #000 !important; box-shadow: none !important; }
   .cv-name { font-size: 22pt; color: #000 !important; }
   .cv-role, .cv-contact { font-size: 9pt; color: #000 !important; }
   .cv-contact a { color: #000 !important; border: 0 !important; }
