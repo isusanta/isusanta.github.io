@@ -30,6 +30,7 @@ appointments:
     location: "Cleveland, Ohio, USA"
     period: "Oct 2023 — Present"
     current: true
+    supervisor: "Prof. Kenneth M. Merz Jr."
     detail: >
       Center for Computational Life Sciences (CLS). Research spans:
     points:
