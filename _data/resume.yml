@@ -43,10 +43,10 @@ appointments:
     location: "East Lansing, Michigan, USA"
     period: "Apr 2019 — Oct 2023"
     supervisor: "Prof. Kenneth M. Merz Jr."
-    detail: >
-      QM/ML spectroscopy workflows for metabolomics (NMR chemical shift and collisional cross
-      section prediction); AutoGraph conformational clustering algorithm; web server
-      development for metabolomics characterization (pomics.org).
+    points:
+      - "QM/ML spectroscopy workflows for metabolomics: NMR chemical shift and collisional cross section (CCS) prediction."
+      - "AutoGraph conformational clustering algorithm."
+      - "Web server development for metabolomics characterization (pomics.org)."
 
   - logo: "bar-ilan.png"
     role: "Postdoctoral Research Fellow"
@@ -55,10 +55,10 @@ appointments:
     location: "Ramat-Gan, Israel"
     period: "Aug 2015 — Apr 2019"
     supervisor: "Prof. Dan Thomas Major"
-    detail: >
-      Hybrid QM/MM simulation of enzyme-catalysed terpene biosynthesis (selinadiene synthase,
-      limonene synthase); development of the CHARMM-based QM/MM docking code EnzyDock; QM
-      region size convergence in QM/MM; homology modelling.
+    points:
+      - "Hybrid QM/MM simulation of enzyme-catalysed terpene biosynthesis (selinadiene synthase, limonene synthase)."
+      - "Development of the CHARMM-based QM/MM docking code EnzyDock."
+      - "QM region size convergence in QM/MM; homology modelling."
 
   - logo: "csir-ncl.png"
     role: "Doctoral Researcher"
@@ -67,10 +67,9 @@ appointments:
     location: "Pune, Maharashtra, India"
     period: "Jan 2010 — Aug 2015"
     supervisor: "Prof. Sourav Pal"
-    detail: >
-      Doctoral thesis: <em>Theoretical Investigation on Structure and Reactivity Properties of
-      Molecules and Metal Clusters: A Conceptual DFT and Ab Initio Molecular Dynamics
-      Approach.</em> Ph.D. in Chemistry awarded August 2015.
+    points:
+      - "Doctoral thesis: <em>Theoretical Investigation on Structure and Reactivity Properties of Molecules and Metal Clusters: A Conceptual DFT and Ab Initio Molecular Dynamics Approach.</em>"
+      - "Ph.D. in Chemistry awarded August 2015."
 
 education:
   - degree: "Ph.D."
