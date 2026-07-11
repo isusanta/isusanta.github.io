@@ -73,18 +73,21 @@ appointments:
 
 education:
   - degree: "Ph.D."
+    logo: "csir-ncl.png"
     field: "Chemistry"
     institution: "CSIR-National Chemical Laboratory / AcSIR"
     location: "Pune, India"
     year: "2015"
 
   - degree: "M.Sc."
+    logo: "visva-bharati.png"
     field: "Chemistry"
     institution: "Visva-Bharati (A Central University)"
     location: "Santiniketan, India"
     year: "2009"
 
   - degree: "B.Sc. (Hons.)"
+    logo: "burdwan.png"
     field: "Chemistry"
     institution: "University of Burdwan"
     location: "Burdwan, India"

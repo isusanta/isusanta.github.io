@@ -100,6 +100,11 @@ redirect_from:
         <div class="cv-edu">
           {% for deg in site.data.resume.education %}
             <article class="cv-card cv-card--edu">
+              {% if deg.logo %}
+                <span class="cv-card__logo cv-card__logo--edu">
+                  <img src="/images/logos/{{ deg.logo }}" alt="{{ deg.institution }} logo" loading="lazy">
+                </span>
+              {% endif %}
               <span class="cv-degree">{{ deg.degree }}</span>
               <div class="cv-card__body">
                 <h3 class="cv-card__role">{{ deg.field }}</h3>
@@ -373,6 +378,7 @@ redirect_from:
   padding: 5px;
 }
 .cv-card__logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.cv-card__logo--edu { width: 54px; height: 54px; padding: 6px; }
 
 .cv-card__body { flex: 1; min-width: 0; }
 .cv-card__top {
@@ -433,7 +439,7 @@ redirect_from:
 .cv-card--edu { display: flex; align-items: center; gap: 1.2em; padding: 1em 1.4em; }
 .cv-degree {
   flex-shrink: 0;
-  min-width: 96px;
+  min-width: 84px;
   font-family: 'Exo 2', 'Inter', sans-serif;
   font-size: 1.05em;
   font-weight: 700;
