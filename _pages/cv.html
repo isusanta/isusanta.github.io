@@ -43,6 +43,13 @@ redirect_from:
       </div>
     {% endfor %}
   </div>
+  {% if site.data.resume.stats_updated %}
+    <p class="cv-stats-asof">
+      <span class="cv-stats-asof__dot" aria-hidden="true"></span>
+      Citations &amp; metrics updated
+      <span class="cv-stats-asof__date">{{ site.data.resume.stats_updated }}</span>
+    </p>
+  {% endif %}
 
   <!-- ===== Rail + content ===== -->
   <div class="cv-body">
@@ -236,12 +243,37 @@ redirect_from:
 /* ---------- Stat band ---------- */
 .cv-stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  margin: 0 0 2.6em;
+  margin: 0 0 0.9em;
   background: #e3e8e9;                    /* shows through as hairline dividers */
   border-radius: 0 0 8px 8px;
   overflow: hidden;
+}
+.cv-stats-asof {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0 0 2.6em;
+  padding: 0.32em 0.85em;
+  font-size: 0.74em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #5a6768;
+  background: rgba(0,109,119,0.06);
+  border: 1px solid rgba(0,109,119,0.16);
+  border-radius: 999px;
+}
+.cv-stats-asof__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #006d77;
+}
+.cv-stats-asof__date {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #006d77;
 }
 .cv-stat {
   background: rgba(0,109,119,0.045);
@@ -441,7 +473,7 @@ redirect_from:
 }
 @media (max-width: 600px) {
   .cv-name { font-size: 1.9em; }
-  .cv-stats { grid-template-columns: repeat(2, 1fr); }
+  .cv-stats { grid-template-columns: repeat(3, 1fr); }
   .cv-stat__value { font-size: 1.6em; }
   .cv-card--job { flex-direction: column; gap: 0.9em; }
   .cv-card--edu { flex-wrap: wrap; gap: 0.5em 1em; }
@@ -461,6 +493,9 @@ redirect_from:
   .cv-stats { background: #2c3a3c; }
   .cv-stat { background: rgba(0,109,119,0.16); }
   .cv-stat__label { color: #9fb0b2; }
+  .cv-stats-asof { color: #9fb0b2; background: rgba(0,109,119,0.18); border-color: rgba(120,190,196,0.30); }
+  .cv-stats-asof__date { color: #7fd3db; }
+  .cv-stats-asof__dot { background: #7fd3db; }
   .cv-rail ul { border-left-color: #2c3a3c; }
   .cv-rail a { color: #8f9fa1; }
   .cv-h2 { border-bottom-color: #2c3a3c; }
@@ -481,7 +516,7 @@ redirect_from:
 
 /* ---------- Print ---------- */
 @media print {
-  .masthead, .page__footer, .page__meta, .cv-rail, .cv-stats, .cv-print, .author__urls-wrapper {
+  .masthead, .page__footer, .page__meta, .cv-rail, .cv-stats, .cv-stats-asof, .cv-print, .author__urls-wrapper {
     display: none !important;
   }
   .page, .page__content, .cv { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }

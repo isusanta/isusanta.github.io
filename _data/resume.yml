@@ -15,8 +15,9 @@ stats:
     label: "Citations"
   - value: "15"
     label: "h-index"
-  - value: "41"
-    label: "Reviews"
+
+# Date the citation/metrics band was last refreshed (shown under the stat band).
+stats_updated: "July 2026"
 
 # Citation figure and h-index are from Google Scholar, July 2026.
 # NOTE: the citation count is ALSO hardcoded in _pages/publications.html (line 9). Keep in sync.
