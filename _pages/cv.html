@@ -35,21 +35,28 @@ redirect_from:
   </header>
 
   <!-- ===== Stat band ===== -->
-  <div class="cv-stats">
-    {% for stat in site.data.resume.stats %}
-      <div class="cv-stat">
-        <span class="cv-stat__value">{{ stat.value }}</span>
-        <span class="cv-stat__label">{{ stat.label }}</span>
+  <div class="cv-metrics">
+    <div class="cv-stats">
+      {% for stat in site.data.resume.stats %}
+        <div class="cv-stat">
+          <span class="cv-stat__value">{{ stat.value }}</span>
+          <span class="cv-stat__label">{{ stat.label }}</span>
+        </div>
+      {% endfor %}
+    </div>
+    {% if site.data.resume.stats_updated %}
+      <div class="cv-metrics__foot">
+        <span class="cv-metrics__live" aria-hidden="true"></span>
+        <span class="cv-metrics__note">Citations &amp; metrics updated</span>
+        <span class="cv-metrics__date">{{ site.data.resume.stats_updated }}</span>
+        {% if site.author.googlescholar %}
+          <a class="cv-metrics__src" href="{{ site.author.googlescholar }}" rel="noopener">
+            Google Scholar <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        {% endif %}
       </div>
-    {% endfor %}
+    {% endif %}
   </div>
-  {% if site.data.resume.stats_updated %}
-    <p class="cv-stats-asof">
-      <span class="cv-stats-asof__dot" aria-hidden="true"></span>
-      Citations &amp; metrics updated
-      <span class="cv-stats-asof__date">{{ site.data.resume.stats_updated }}</span>
-    </p>
-  {% endif %}
 
   <!-- ===== Rail + content ===== -->
   <div class="cv-body">
@@ -251,40 +258,67 @@ redirect_from:
 .cv-print:hover { background: #00565e; transform: translateY(-1px); }
 
 /* ---------- Stat band ---------- */
+.cv-metrics {
+  margin: 0 0 2.6em;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
 .cv-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  margin: 0 0 0.9em;
   background: #e3e8e9;                    /* shows through as hairline dividers */
-  border-radius: 0 0 8px 8px;
-  overflow: hidden;
 }
-.cv-stats-asof {
-  display: inline-flex;
+/* provenance strip, sealed into the band instead of floating below it */
+.cv-metrics__foot {
+  display: flex;
   align-items: center;
-  gap: 0.5em;
-  margin: 0 0 2.6em;
-  padding: 0.32em 0.85em;
-  font-size: 0.74em;
-  letter-spacing: 0.05em;
+  flex-wrap: wrap;
+  gap: 0.55em;
+  padding: 0.55em 1.1em;
+  font-size: 0.72em;
+  letter-spacing: 0.075em;
   text-transform: uppercase;
   color: #5a6768;
-  background: rgba(0,109,119,0.06);
-  border: 1px solid rgba(0,109,119,0.16);
-  border-radius: 999px;
+  background: rgba(0,109,119,0.13);
+  border-top: 1px solid #cfdadb;
 }
-.cv-stats-asof__dot {
+.cv-metrics__live {
+  position: relative;
+  flex-shrink: 0;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: #006d77;
 }
-.cv-stats-asof__date {
+.cv-metrics__live::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,109,119,0.45);
+  animation: cv-ping 2.8s ease-out infinite;
+}
+@keyframes cv-ping {
+  0%   { transform: scale(0.55); opacity: 0.9; }
+  70%  { transform: scale(1.6);  opacity: 0; }
+  100% { transform: scale(1.6);  opacity: 0; }
+}
+.cv-metrics__date {
+  font-family: 'Exo 2', 'Inter', sans-serif;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #006d77;
 }
+.cv-metrics__src {
+  margin-left: auto;
+  color: #5a6768;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.cv-metrics__src:hover { color: #006d77; border-bottom-color: #006d77; text-decoration: none; }
+.cv-metrics__src i { margin-left: 0.35em; font-size: 0.85em; opacity: 0.7; }
 .cv-stat {
   background: rgba(0,109,119,0.045);
   padding: 1.15em 0.6em;
@@ -509,6 +543,8 @@ redirect_from:
   .cv-name { font-size: 1.9em; }
   .cv-stats { grid-template-columns: repeat(3, 1fr); }
   .cv-stat__value { font-size: 1.6em; }
+  .cv-metrics__foot { font-size: 0.64em; letter-spacing: 0.05em; padding: 0.5em 0.8em; }
+  .cv-metrics__src { margin-left: 0; }
   .cv-card--job { flex-direction: column; gap: 0.9em; }
   .cv-card--edu { flex-wrap: wrap; gap: 0.5em 1em; }
   .cv-degree { min-width: 0; }
@@ -518,6 +554,7 @@ redirect_from:
 @media (prefers-reduced-motion: reduce) {
   .cv-card, .cv-print { transition: none; }
   .cv-card:hover, .cv-print:hover { transform: none; }
+  .cv-metrics__live::after { animation: none; opacity: 0.5; }
 }
 
 /* ---------- Dark mode ---------- */
@@ -527,9 +564,12 @@ redirect_from:
   .cv-stats { background: #2c3a3c; }
   .cv-stat { background: rgba(0,109,119,0.16); }
   .cv-stat__label { color: #9fb0b2; }
-  .cv-stats-asof { color: #9fb0b2; background: rgba(0,109,119,0.18); border-color: rgba(120,190,196,0.30); }
-  .cv-stats-asof__date { color: #7fd3db; }
-  .cv-stats-asof__dot { background: #7fd3db; }
+  .cv-metrics__foot { color: #9fb0b2; background: rgba(0,109,119,0.26); border-top-color: #33474a; }
+  .cv-metrics__date { color: #7fd3db; }
+  .cv-metrics__live { background: #7fd3db; }
+  .cv-metrics__live::after { border-color: rgba(127,211,219,0.55); }
+  .cv-metrics__src { color: #9fb0b2; }
+  .cv-metrics__src:hover { color: #7fd3db; border-bottom-color: #7fd3db; }
   .cv-rail ul { border-left-color: #2c3a3c; }
   .cv-rail a { color: #8f9fa1; }
   .cv-h2 { border-bottom-color: #2c3a3c; }
@@ -552,7 +592,7 @@ redirect_from:
 
 /* ---------- Print ---------- */
 @media print {
-  .masthead, .page__footer, .page__meta, .cv-rail, .cv-stats, .cv-stats-asof, .cv-print, .author__urls-wrapper {
+  .masthead, .page__footer, .page__meta, .cv-rail, .cv-metrics, .cv-print, .author__urls-wrapper {
     display: none !important;
   }
   .page, .page__content, .cv { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
