@@ -11,7 +11,7 @@
 stats:
   - value: "27"
     label: "Publications"
-  - value: "637"
+  - value: "648"
     label: "Citations"
   - value: "15"
     label: "h-index"
