@@ -60,6 +60,11 @@ With Prof. Kenneth M. Merz Jr. at Michigan State University, I built combined qu
 
 My doctoral research at CSIR-National Chemical Laboratory, with Prof. Sourav Pal, applied density functional theory (DFT), ab initio molecular dynamics, and coupled-cluster methods to the reactivity of aluminum nanoclusters. Topics included dinitrogen activation by silicon and phosphorus doped clusters, oxidative addition of carbon-iodine bonds, and site selectivity rationalized through conceptual DFT reactivity descriptors.
 
+<figure class="research-figure">
+  <img src="/images/research/nanocluster-oxidative-addition.jpg" alt="Free energy profile for oxidative addition of a carbon-iodine bond on an aluminum nanocluster" loading="lazy">
+  <figcaption>Oxidative addition of the carbon-iodine bond of an aryl iodide on an aluminum nanocluster: reactant complex, transition state, and product along the computed reaction profile (<em>Nanoscale</em> 2015, 7, 12109).</figcaption>
+</figure>
+
 <style>
 /* Lead paragraph, set larger than body */
 .page__content .lead {
