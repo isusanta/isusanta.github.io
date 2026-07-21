@@ -78,21 +78,21 @@ education:
     field: "Chemistry"
     institution: "CSIR-National Chemical Laboratory / AcSIR"
     location: "Pune, India"
-    year: "2015"
+    year: "2010 – 2015"
 
   - degree: "M.Sc."
     logo: "visva-bharati.png"
     field: "Chemistry"
     institution: "Visva-Bharati (A Central University)"
     location: "Santiniketan, India"
-    year: "2009"
+    year: "2007 – 2009"
 
   - degree: "B.Sc. (Hons.)"
     logo: "burdwan.png"
     field: "Chemistry"
     institution: "University of Burdwan"
     location: "Burdwan, India"
-    year: "2007"
+    year: "2004 – 2007"
 
 awards:
   - title: "CSIR-UGC National Eligibility Test (NET)"
