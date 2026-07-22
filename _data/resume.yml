@@ -96,6 +96,8 @@ education:
     logo: "burdwan.png"
     field: "Chemistry"
     institution: "University of Burdwan"
+    # Optional. Any education entry with a url: renders its institution name as a link.
+    url: "https://www.buruniv.ac.in/Demo/index_bucc.php"
     location: "Burdwan, India"
     year: "2004 – 2007"
 

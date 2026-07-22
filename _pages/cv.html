@@ -118,7 +118,13 @@ redirect_from:
               <span class="cv-degree">{{ deg.degree }}</span>
               <div class="cv-card__body">
                 <h3 class="cv-card__role">{{ deg.field }}</h3>
-                <p class="cv-card__inst">{{ deg.institution }}</p>
+                <p class="cv-card__inst">
+                  {% if deg.url %}
+                    <a href="{{ deg.url }}" rel="noopener">{{ deg.institution }}</a>
+                  {% else %}
+                    {{ deg.institution }}
+                  {% endif %}
+                </p>
                 <p class="cv-card__loc">{{ deg.location }}</p>
               </div>
               <span class="cv-card__period">{{ deg.year }}</span>
@@ -484,6 +490,13 @@ redirect_from:
 }
 .cv-card--edu .cv-card__role { font-size: 1em; }
 .cv-card--edu .cv-card__inst { font-size: 0.88em; margin-top: 0.1em; }
+.cv-card__inst a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #cfdadb;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.cv-card__inst a:hover { color: #006d77; border-bottom-color: #006d77; text-decoration: none; }
 .cv-card--edu .cv-card__loc { display: block; font-size: 0.8em; margin-top: 0.05em; }
 
 /* ---------- Awards ---------- */
@@ -581,6 +594,8 @@ redirect_from:
   .cv-card__logo { background: #fff; border-color: #33474a; }
   .cv-card__role { color: #e6edee; }
   .cv-card__inst { color: #c3d0d2; }
+  .cv-card__inst a { border-bottom-color: #33474a; }
+  .cv-card__inst a:hover { color: #7fd3db; border-bottom-color: #7fd3db; }
   .cv-card__detail { color: #a9b8ba; }
   .cv-points li { color: #a9b8ba; }
   .cv-points li::before { background: #4bb3bd; box-shadow: 0 0 0 3px rgba(75,179,189,0.18); }
@@ -606,6 +621,7 @@ redirect_from:
   .cv-name { font-size: 22pt; color: #000 !important; }
   .cv-role, .cv-contact { font-size: 9pt; color: #000 !important; }
   .cv-contact a { color: #000 !important; border: 0 !important; }
+  .cv-card__inst a { color: #000 !important; border: 0 !important; }
   .cv-head { border-bottom: 2px solid #000; padding-bottom: 0.5em; }
 
   .cv-h2 {
