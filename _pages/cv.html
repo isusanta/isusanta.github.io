@@ -18,6 +18,9 @@ redirect_from:
         {% if site.author.email %}
           <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> {{ site.author.email }}</a></li>
         {% endif %}
+        {% if site.data.resume.email_work %}
+          <li><a href="mailto:{{ site.data.resume.email_work }}"><i class="fas fa-building" aria-hidden="true"></i> {{ site.data.resume.email_work }}</a></li>
+        {% endif %}
         {% if site.author.googlescholar %}
           <li><a href="{{ site.author.googlescholar }}" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
         {% endif %}

@@ -19,6 +19,11 @@ stats:
 # Date the citation/metrics band was last refreshed (shown under the stat band).
 stats_updated: "July 2026"
 
+# Institutional email, shown in the CV contact row next to the personal one.
+# Personal address lives in _config.yml (site.author.email) and is used site-wide;
+# this one is CV-only. Clear this line if the affiliation changes.
+email_work: "dass11@ccf.org"
+
 # Citation figure and h-index are from Google Scholar, July 2026.
 # NOTE: the citation count is ALSO hardcoded in _pages/publications.html (line 9). Keep in sync.
 
