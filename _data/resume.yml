@@ -37,7 +37,7 @@ appointments:
     current: true
     supervisor: "Prof. Kenneth M. Merz Jr."
     detail: >
-      Center for Computational Life Sciences (CLS). Research spans:
+      Computational Life Sciences (CLS). Research spans:
     points:
       - "Quantum computing for electronic structure and molecular energetics: EWF-SQD pipeline for FLiBe molten salt clusters on IBM quantum hardware; ORNL project CHM243."
       - "QM/ML methods for metabolomics and precision medicine."
