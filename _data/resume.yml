@@ -82,6 +82,7 @@ education:
     logo: "csir-ncl.png"
     field: "Chemistry"
     institution: "CSIR-National Chemical Laboratory / AcSIR"
+    url: "https://www.ncl-india.org/"
     location: "Pune, India"
     year: "2010 – 2015"
 
@@ -89,6 +90,7 @@ education:
     logo: "visva-bharati.png"
     field: "Chemistry"
     institution: "Visva-Bharati (A Central University)"
+    url: "https://www.visvabharati.ac.in/home/"
     location: "Santiniketan, India"
     year: "2007 – 2009"
 
