@@ -120,7 +120,7 @@ redirect_from:
                 <h3 class="cv-card__role">{{ deg.field }}</h3>
                 <p class="cv-card__inst">
                   {% if deg.url %}
-                    <a href="{{ deg.url }}" rel="noopener">{{ deg.institution }}</a>
+                    <a href="{{ deg.url }}" target="_blank" rel="noopener noreferrer">{{ deg.institution }}</a>
                   {% else %}
                     {{ deg.institution }}
                   {% endif %}
