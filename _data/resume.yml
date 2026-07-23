@@ -60,10 +60,12 @@ appointments:
   - logo: "bar-ilan.png"
     role: "Postdoctoral Research Fellow"
     institution: "Bar-Ilan University"
+    url: "https://ch.biu.ac.il/"
     department: "Department of Chemistry"
     location: "Ramat-Gan, Israel"
     period: "Aug 2015 — Apr 2019"
     supervisor: "Prof. Dan Thomas Major"
+    supervisor_url: "https://ch.biu.ac.il/major"
     points:
       - "Hybrid QM/MM simulation of enzyme-catalysed terpene biosynthesis (selinadiene synthase, limonene synthase)."
       - "Development of the CHARMM-based QM/MM docking code EnzyDock."
