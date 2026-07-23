@@ -2,24 +2,9 @@
 # One block per image in images/gallery/.
 # - image: filename inside images/gallery/
 # - caption: text shown under the photo
-
-- image: "hernandez-cleveland-2026.jpg"
-  caption: "With Prof. Rigoberto Hernandez, President of the American Chemical Society, and the Merz group at Cleveland Clinic — April 2026"
-
-- image: "quantum-center-2023.jpg"
-  caption: "Cleveland Clinic Quantum Computer Center, Cleveland — October 2023"
-
-- image: "merz-picnic-2023.jpg"
-  caption: "Merz Lab group barbecue, Patriarche Park, East Lansing — August 2023"
-
-- image: "merz-lunch-2023.jpg"
-  caption: "Merz Group lunch, Sansu Sushi, East Lansing — July 2023"
-
-- image: "mana-edmonton-2022.jpg"
-  caption: "4th Annual MANA Conference, Edmonton, Alberta, Canada — September 2022"
-
-- image: "levitt-jerusalem-2016.jpg"
-  caption: "With 2013 Nobel Laureate Dr. Michael Levitt, Jerusalem, Israel — January 2016"
+#
+# Order = display order (gallery.html renders in file order, no sort).
+# Kept OLDEST -> NEWEST by the date in each caption.
 
 - image: "krakow-cttc-2013.jpg"
   caption: "Poster presentation, CTTC-VI International Conference on Current Trends in Theoretical Chemistry, Krakow, Poland — September 2013"
@@ -29,3 +14,21 @@
 
 - image: "phd-defense-2015.jpg"
   caption: "Ph.D. defense, Savitribai Phule Pune University — August 2015"
+
+- image: "levitt-jerusalem-2016.jpg"
+  caption: "With 2013 Nobel Laureate Dr. Michael Levitt, Jerusalem, Israel — January 2016"
+
+- image: "mana-edmonton-2022.jpg"
+  caption: "4th Annual MANA Conference, Edmonton, Alberta, Canada — September 2022"
+
+- image: "merz-lunch-2023.jpg"
+  caption: "Merz Group lunch, Sansu Sushi, East Lansing — July 2023"
+
+- image: "merz-picnic-2023.jpg"
+  caption: "Merz Lab group barbecue, Patriarche Park, East Lansing — August 2023"
+
+- image: "quantum-center-2023.jpg"
+  caption: "Cleveland Clinic Quantum Computer Center, Cleveland — October 2023"
+
+- image: "hernandez-cleveland-2026.jpg"
+  caption: "With Prof. Rigoberto Hernandez, President of the American Chemical Society, and the Merz group at Cleveland Clinic — April 2026"
