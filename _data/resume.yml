@@ -46,10 +46,12 @@ appointments:
   - logo: "michigan-state.png"
     role: "Postdoctoral Research Fellow"
     institution: "Michigan State University"
+    url: "https://www.chemistry.msu.edu/"
     department: "Department of Chemistry"
     location: "East Lansing, Michigan, USA"
     period: "Apr 2019 — Oct 2023"
     supervisor: "Prof. Kenneth M. Merz Jr."
+    supervisor_url: "http://www.merzgroup.net/team.html"
     points:
       - "QM/ML spectroscopy workflows for metabolomics: NMR chemical shift and collisional cross section (CCS) prediction."
       - "AutoGraph conformational clustering algorithm."
