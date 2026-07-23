@@ -301,7 +301,6 @@ redirect_from:
 
 - Implement the Embedded Wavefunction-Sample-based Quantum Diagonalization (EWF-SQD) pipeline on IBM quantum processors, in active collaboration with IBM Research and the Merz group.
 - Benchmark target: FLiBe (LiF-BeF2) molten salt clusters relevant to advanced nuclear reactors.
-- Recover relative energies within 0.7 kcal/mol of classical FCI, including strongly multi-reference cases.
 - Extend quantum-centric methods with the Merz group to protein-ligand free energy perturbation and intermolecular interactions.
 {: .research-points}
 

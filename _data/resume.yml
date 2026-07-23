@@ -31,13 +31,14 @@ appointments:
   - logo: "cleveland-clinic.png"
     role: "Research Associate"
     institution: "Cleveland Clinic"
+    url: "https://www.lerner.ccf.org/computational-medicine/"
     department: "Cleveland Clinic Foundation, Cleveland Clinic Research"
     location: "Cleveland, Ohio, USA"
     period: "Oct 2023 — Present"
     current: true
     supervisor: "Prof. Kenneth M. Merz Jr."
-    detail: >
-      Computational Life Sciences (CLS). Research spans:
+    supervisor_url: "https://www.lerner.ccf.org/computational-medicine/merz/#lab-people"
+    detail: "Computational Life Sciences (CLS)."
     points:
       - "Quantum computing for electronic structure and molecular energetics: EWF-SQD pipeline for FLiBe molten salt clusters on IBM quantum hardware; ORNL project CHM243."
       - "QM/ML methods for metabolomics and precision medicine."
