@@ -2,6 +2,13 @@
 # type: "journal" (includes arXiv preprints) | "book_chapter"
 # Order: reverse chronological within each type.
 
+- title: "Quantum Computing Enabled ab initio Molecular Dynamics Simulations"
+  authors: "Susanta Das, Subhamoy Bhowmik, Zhen Li, Milana Bazayeva, Danil Kaliakin, Akhil Shajan, and Kenneth M. Merz Jr."
+  venue: "arXiv:2607.28548 (2026)"
+  year: 2026
+  doi: "10.48550/arXiv.2607.28548"
+  type: "journal"
+
 - title: "Quantum Computations on Fusion Blanket Molten Salts"
   authors: "Susanta Das, Thiago J. Pinheiro Dos Santos, Subhamoy Bhowmik, Milana Bazayeva, Zhen Li, Akhil Shajan, Danil Kaliakin, Fangchun Liang, Vyacheslav S. Bryantsev, Al Geist, Abigail McClain Gomez, Thaddeus Pellegrini, Robert Walkup, Seetharami R. Seelam, Mario Motta, Kenneth M. Merz Jr., Thomas Beck"
   venue: "arXiv:2606.30402 (2026)"
@@ -11,7 +18,7 @@
 
 - title: "Quantum-Centric Alchemical Free Energy Calculations"
   authors: "Milana Bazayeva, Zhen Li, Danil Kaliakin, Fangchun Liang, Akhil Shajan, Susanta Das, and Kenneth M. Merz Jr."
-  venue: "J. Chem. Theory Comput. 2026, ASAP"
+  venue: "J. Chem. Theory Comput. 2026, 22, 6835"
   year: 2026
   doi: "10.1021/acs.jctc.6c00526"
   type: "journal"

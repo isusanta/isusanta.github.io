@@ -9,9 +9,9 @@
 # service      -> peer review summary paragraph
 
 stats:
-  - value: "27"
+  - value: "28"
     label: "Publications"
-  - value: "648"
+  - value: "657"
     label: "Citations"
   - value: "15"
     label: "h-index"
