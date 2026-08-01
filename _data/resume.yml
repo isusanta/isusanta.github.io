@@ -108,6 +108,56 @@ education:
     location: "Burdwan, India"
     year: "2004 – 2007"
 
+# Talks and conference participation, rendered by the "Talks" section of _pages/cv.html.
+# Two groups, each newest first. Mirrors the "Scientific Presentations and Conference
+# Participation" section of the LaTeX CV (~/pspace-lri/cv_susanta-das/).
+#   date  -> short label in the left column
+#   title -> optional talk title, rendered in italics; omit for attendance-only entries
+#   event -> conference or workshop name, host, and location
+#   note  -> optional tag, e.g. "Poster presented"
+talks:
+  - group: "Oral Presentations"
+    items:
+      - date: "Apr 2026"
+        title: "Protonation State Sampling via IBM Quantum QCSC"
+        event: "IBM Quantum Ideation Workshop, Molecular Simulation at the Quantum Frontier; IBM Quantum Computational Sciences Program, April 15-16, 2026"
+      - date: "Sep 2020"
+        event: "Metabolomics Association of North America (MANA), University of Michigan, Ann Arbor, USA"
+      - date: "Nov 2019"
+        event: "Metabolomics Association of North America (MANA), University of Georgia, Atlanta, USA"
+
+  - group: "Conferences, Symposiums, and Workshops"
+    items:
+      - date: "Apr 2024"
+        event: "Healthcare and Life Sciences Quantum Working Group Meeting (HCLS), Cleveland, Ohio, USA"
+      - date: "Sep 2022"
+        event: "Metabolomics Association of North America (MANA), University of Alberta, Edmonton, Canada"
+      - date: "Oct 2021"
+        event: "Metabolomics Association of North America (MANA), Ohio State University, Columbus, Ohio, USA"
+      - date: "May 2018"
+        event: "1st French-Israeli Workshop on Cheminformatics, Bar-Ilan University, Ramat-Gan, Israel"
+      - date: "Feb 2018"
+        event: "83rd Annual Meeting of the Israel Chemical Society, Tel-Aviv, Israel"
+      - date: "Feb 2017"
+        event: "82nd Annual Meeting of the Israel Chemical Society, Tel-Aviv, Israel"
+      - date: "Feb 2017"
+        event: "Molcas Users Workshop, Hebrew University of Jerusalem, Jerusalem, Israel"
+      - date: "Feb 2016"
+        event: "Workshop on High Throughput Materials Discovery: Perspectives and Challenges in Theory and Experiment, Tel-Aviv University, Tel-Aviv, Israel"
+      - date: "Jan 2016"
+        event: "23rd Jerusalem School in Life Sciences: Computational and Structural Biology, Hebrew University of Jerusalem, Jerusalem, Israel"
+      - date: "Jun 2014"
+        event: "Summer School MASTANI, Materials Simulations: Theory and Numerics, IISER Pune, Pune, India"
+      - date: "Sep 2013"
+        event: "International Conference on Current Trends in Theoretical Chemistry (CTTC-VI), Jagiellonian University, Krakow, Poland"
+        note: "Poster presented"
+      - date: "Feb 2013"
+        event: "International Conference on Electronic Structure and Dynamics of Molecules and Clusters (ESDMC), Indian Association for the Cultivation of Science (IACS), Kolkata, India"
+        note: "Poster presented"
+      - date: "Dec 2012"
+        event: "Theoretical Chemistry Symposium (TCS), IIT Guwahati, Guwahati, India"
+        note: "Poster presented"
+
 awards:
   - title: "CSIR-UGC National Eligibility Test (NET)"
     detail: "Junior Research Fellowship (JRF), All India Rank 46"

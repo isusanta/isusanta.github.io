@@ -69,6 +69,7 @@ redirect_from:
         <li><a href="#appointments">Appointments</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
         <li><a href="#awards">Awards</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#service">Service</a></li>
@@ -136,11 +137,30 @@ redirect_from:
       <section id="publications">
         <h2 class="cv-h2">Publications</h2>
         <p class="cv-prose">
-          27 peer-reviewed publications (25 journal articles and preprints, 2 book chapters);
+          {{ site.data.resume.stats[0].value }} publications (26 journal articles and preprints, 2 book chapters);
           {{ site.data.resume.stats[1].value }} citations, h-index {{ site.data.resume.stats[2].value }}
           (<a href="{{ site.author.googlescholar }}" rel="noopener">Google Scholar</a>, July 2026).
           See the <a href="/publications/">full publication list</a> for titles, venues, and DOIs.
         </p>
+      </section>
+
+      <section id="talks">
+        <h2 class="cv-h2">Talks and Conference Participation</h2>
+        {% for grp in site.data.resume.talks %}
+          <h3 class="cv-subhead">{{ grp.group }}</h3>
+          <ul class="cv-talks">
+            {% for t in grp.items %}
+              <li>
+                <span class="cv-talks__date">{{ t.date }}</span>
+                <span class="cv-talks__body">
+                  {% if t.title %}<em class="cv-talks__title">{{ t.title }}</em>{% endif %}
+                  <span class="cv-talks__event">{{ t.event }}</span>
+                  {% if t.note %}<span class="cv-talks__note">{{ t.note }}</span>{% endif %}
+                </span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
       </section>
 
       <section id="awards">
@@ -515,6 +535,41 @@ redirect_from:
 .cv-award__body strong { font-weight: 600; color: #1f2d2f; }
 .cv-award__detail { font-size: 0.88em; color: #6b7778; margin-top: 0.15em; }
 
+.cv-subhead {
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.82em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6b7778;
+  margin: 1.5em 0 0.2em;
+}
+.cv-subhead:first-of-type { margin-top: 0.4em; }
+.cv-talks { list-style: none; margin: 0; padding: 0; }
+.cv-talks li { display: flex; gap: 1.4em; padding: 0.8em 0; border-bottom: 1px solid #eef2f2; }
+.cv-talks li:last-child { border-bottom: 0; }
+.cv-talks__date {
+  flex-shrink: 0;
+  min-width: 76px;
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.92em;
+  color: #006d77;
+}
+.cv-talks__body { display: flex; flex-direction: column; }
+.cv-talks__title { font-style: italic; font-weight: 600; color: #1f2d2f; }
+.cv-talks__event { font-size: 0.9em; line-height: 1.55; color: #4a5859; }
+.cv-talks__note {
+  align-self: flex-start;
+  margin-top: 0.35em;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  background: rgba(0,109,119,0.1);
+  font-size: 0.74em;
+  letter-spacing: 0.03em;
+  color: #006d77;
+}
+
 /* ---------- Skills ---------- */
 .cv-skill + .cv-skill { margin-top: 1.4em; }
 .cv-skill__group {
@@ -565,6 +620,7 @@ redirect_from:
   .cv-card--edu { flex-wrap: wrap; gap: 0.5em 1em; }
   .cv-degree { min-width: 0; }
   .cv-card--edu .cv-card__period { width: 100%; }
+  .cv-talks li { flex-direction: column; gap: 0.25em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -600,6 +656,12 @@ redirect_from:
   .cv-points li { color: #a9b8ba; }
   .cv-points li::before { background: #4bb3bd; box-shadow: 0 0 0 3px rgba(75,179,189,0.18); }
   .cv-awards li { border-bottom-color: #2c3a3c; }
+  .cv-subhead { color: #8f9fa1; }
+  .cv-talks li { border-bottom-color: #2c3a3c; }
+  .cv-talks__date { color: #7fd3db; }
+  .cv-talks__title { color: #e6edee; }
+  .cv-talks__event { color: #a9b8ba; }
+  .cv-talks__note { background: rgba(127,211,219,0.16); color: #7fd3db; }
   .cv-award__body strong { color: #e6edee; }
   .cv-chips li { color: #c3d0d2; background: rgba(0,109,119,0.18); border-color: rgba(0,109,119,0.3); }
   .cv-prose { color: #c3d0d2; }
@@ -649,6 +711,11 @@ redirect_from:
   .cv-card__period, .cv-card__loc, .cv-card__dept, .cv-card__sup, .cv-award__detail {
     color: #333 !important;
   }
+  .cv-subhead { color: #000 !important; }
+  .cv-talks li { border-bottom: 0 !important; padding: 0.25em 0 !important; page-break-inside: avoid; break-inside: avoid; }
+  .cv-talks__date, .cv-talks__title { color: #000 !important; }
+  .cv-talks__event { color: #333 !important; font-size: 9pt; }
+  .cv-talks__note { background: none !important; color: #333 !important; padding: 0 !important; font-style: italic; }
   .cv-card__detail, .cv-prose { font-size: 9pt; }
 
   .cv-chips li {
