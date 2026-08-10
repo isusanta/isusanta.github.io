@@ -119,7 +119,6 @@ talks:
   - group: "Oral Presentations"
     items:
       - date: "Apr 2026"
-        title: "Protonation State Sampling via IBM Quantum QCSC"
         event: "IBM Quantum Ideation Workshop, Molecular Simulation at the Quantum Frontier; IBM Quantum Computational Sciences Program, April 15-16, 2026"
       - date: "Sep 2020"
         event: "Metabolomics Association of North America (MANA), University of Michigan, Ann Arbor, USA"
