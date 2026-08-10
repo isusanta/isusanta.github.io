@@ -7,7 +7,7 @@ author_profile: true
 
 <div class="photo-gallery">
 {% for g in site.data.gallery %}
-  <figure class="photo-card">
+  <figure class="photo-card{% if g.wide %} photo-card--wide{% endif %}">
     <img src="/images/gallery/{{ g.image }}" alt="{{ g.caption }}" loading="lazy">
     <figcaption>{{ g.caption }}</figcaption>
   </figure>
@@ -39,6 +39,14 @@ author_profile: true
   object-fit: cover;
   display: block;
   border-bottom: 1px solid #eee;
+}
+/* Opt-in for 16:9 source photos: show them uncropped across two columns.
+   The 4:3 tile crop would otherwise cut ~17% off each side. Set `wide: true`
+   on the entry in _data/gallery.yml. The span only kicks in once the grid
+   actually has two columns, so single-column phone layouts stay intact. */
+.photo-card--wide img { aspect-ratio: 16 / 9; }
+@media (min-width: 620px) {
+  .photo-card--wide { grid-column: span 2; }
 }
 .photo-card figcaption {
   padding: 0.7em 0.85em 0.9em;

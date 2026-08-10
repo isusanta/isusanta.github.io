@@ -16,6 +16,7 @@ redirect_from:
     <a class="news-btn" href="https://www.ornl.gov/news/oak-ridge-national-lab-cleveland-clinic-and-ibm-achieve-first-known-computations-fusion">Oak Ridge National Lab →</a>
     <a class="news-btn news-btn-solid" href="https://doi.org/10.48550/arXiv.2606.30402">Read the Preprint →</a>
   </div>
+  <p class="news-latest">Latest preprint: <a href="https://doi.org/10.48550/arXiv.2607.28548">Quantum Computing Enabled <em>ab initio</em> Molecular Dynamics Simulations</a> (arXiv:2607.28548).</p>
 </div>
 
 <style>
@@ -68,6 +69,19 @@ redirect_from:
 .news-btn:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
 .news-btn-solid { background: #fff; color: #006d77 !important; border-color: #fff; }
 .news-btn-solid:hover { background: #e6f2f3; }
+.news-latest {
+  margin: 1.1em 0 0;
+  padding-top: 0.9em;
+  border-top: 1px solid rgba(255,255,255,0.28);
+  font-size: 0.86em;
+  color: rgba(255,255,255,0.85);
+}
+.news-latest a {
+  color: #fff !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.news-latest a:hover { border-bottom-color: #fff; }
 </style>
 
 ## Featured Work

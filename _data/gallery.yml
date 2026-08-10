@@ -7,6 +7,8 @@
 # Kept NEWEST -> OLDEST by the date in each caption.
 
 - image: "hernandez-cleveland-2026.jpg"
+  # 16:9 source. Renders uncropped across two grid columns; see .photo-card--wide.
+  wide: true
   caption: "With Prof. Rigoberto Hernandez, President of the American Chemical Society, and the Merz group at Cleveland Clinic — April 2026"
 
 - image: "hcls-cleveland-2024.jpg"
