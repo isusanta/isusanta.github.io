@@ -32,9 +32,9 @@ redirect_from:
         {% endif %}
       </ul>
     </div>
-    <button type="button" class="cv-print" onclick="window.print()">
-      <i class="fas fa-download" aria-hidden="true"></i> Save as PDF
-    </button>
+    <a class="cv-print" href="/files/Susanta-Das-CV.pdf" download>
+      <i class="fas fa-download" aria-hidden="true"></i> Download CV (PDF)
+    </a>
   </header>
 
   <!-- ===== Stat band ===== -->
@@ -277,14 +277,17 @@ redirect_from:
   font-size: 0.85em;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: #fff;
+  /* This is an <a>, not a <button>, so the theme's link rules have to be
+     overridden explicitly or it picks up an underline and the link color. */
+  color: #fff !important;
+  text-decoration: none !important;
   background: #006d77;
   border: 1px solid #006d77;
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.15s ease;
 }
-.cv-print:hover { background: #00565e; transform: translateY(-1px); }
+.cv-print:hover { background: #00565e; color: #fff !important; text-decoration: none !important; transform: translateY(-1px); }
 
 /* ---------- Stat band ---------- */
 .cv-metrics {
