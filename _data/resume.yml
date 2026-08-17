@@ -118,6 +118,9 @@ education:
 talks:
   - group: "Oral Presentations"
     items:
+      - date: "Aug 2026"
+        event: "Quantum-centric Supercomputing for Healthcare and Life Sciences panel, Texas Quantum Summit 2026; University of Texas at Dallas, Richardson, Texas, USA"
+        note: "Invited panelist"
       - date: "Apr 2026"
         event: "IBM Quantum Ideation Workshop, Molecular Simulation at the Quantum Frontier; IBM Quantum Computational Sciences Program, April 15-16, 2026"
       - date: "Sep 2020"
