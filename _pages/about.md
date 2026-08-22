@@ -58,27 +58,64 @@ redirect_from:
 <div class="press-list">
 {% for p in site.data.press %}
   <article class="press-item">
-    <div class="press-meta">
-      <span class="press-outlet">{{ p.outlet }}</span>
-      <span class="press-date">{{ p.date }}</span>
-    </div>
-    <h3 class="press-title"><a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a></h3>
-    {% if p.note %}<p class="press-note">{{ p.note }}</p>{% endif %}
-    {% if p.quote %}
-      <blockquote class="press-quote">
-        <span class="press-quote__text">{{ p.quote }}</span>
-        <cite>{{ p.attrib }}</cite>
-      </blockquote>
+    {% if p.image %}
+    <a class="press-thumb" href="{{ p.url }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+      <img src="/images/press/{{ p.image }}" alt="{{ p.image_alt | default: p.outlet }}" loading="lazy">
+    </a>
     {% endif %}
-    {% if p.paper %}<a class="press-paper" href="{{ p.paper }}">Read the paper →</a>{% endif %}
+    <div class="press-body">
+      <div class="press-meta">
+        <span class="press-outlet">{{ p.outlet }}</span>
+        <span class="press-date">{{ p.date }}</span>
+      </div>
+      <h3 class="press-title"><a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a></h3>
+      {% if p.note %}<p class="press-note">{{ p.note }}</p>{% endif %}
+      {% if p.quote %}
+        <blockquote class="press-quote">
+          <span class="press-quote__text">{{ p.quote }}</span>
+          <cite>{{ p.attrib }}</cite>
+        </blockquote>
+      {% endif %}
+      {% if p.paper %}<a class="press-paper" href="{{ p.paper }}">Read the paper →</a>{% endif %}
+    </div>
   </article>
 {% endfor %}
 </div>
 
 <style>
 .press-list { margin: 1.5em 0 0; }
-.press-item { padding: 1.15em 0; border-bottom: 1px solid #eef2f2; }
+.press-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1em;
+  padding: 1.15em 0;
+  border-bottom: 1px solid #eef2f2;
+}
 .press-item:last-child { border-bottom: 0; }
+.press-body { flex: 1; min-width: 0; }
+/* Fixed-width thumb so the text column starts at the same x on every row,
+   whatever the source image aspect ratio happens to be. */
+.press-thumb {
+  flex: 0 0 116px;
+  display: block;
+  border-bottom: 0 !important;
+}
+.press-thumb img {
+  display: block;
+  width: 116px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f4f7f7;
+  border: 1px solid #e4ecec;
+}
+/* Stack on phones: a 116px thumb next to two lines of wrapped text reads worse
+   than the image sitting above its own headline. */
+@media (max-width: 600px) {
+  .press-item { flex-direction: column; gap: 0.7em; }
+  .press-thumb { flex: none; }
+  .press-thumb img { width: 100%; height: 150px; }
+}
 .press-meta { display: flex; align-items: baseline; gap: 0.7em; flex-wrap: wrap; }
 .press-outlet {
   font-family: 'Exo 2', 'Inter', sans-serif;
@@ -125,6 +162,7 @@ redirect_from:
 }
 @media (prefers-color-scheme: dark) {
   .press-item { border-bottom-color: #2c3a3c; }
+  .press-thumb img { background: #1c2426; border-color: #2c3a3c; }
   .press-date, .press-quote cite { color: #8f9fa1; }
   .press-title a { color: #e6edee !important; border-bottom-color: #33474a; }
   .press-title a:hover { color: #7fd3db !important; border-bottom-color: #7fd3db; }

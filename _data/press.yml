@@ -1,6 +1,9 @@
 # Press coverage of research Susanta contributed to.
 # Rendered by the "In the Press" block on _pages/about.md. Newest first.
 #
+#   image    -> thumbnail in images/press/, shown to the LEFT of the text.
+#               Pre-rendered at 348x264 (the 116x88 CSS thumb at 3x) so the
+#               browser does no cropping of its own.
 #   outlet   -> publication name, shown as the small teal label
 #   title    -> the article headline
 #   date     -> display date
@@ -11,11 +14,14 @@
 #               live as buttons in the old news hero (removed 2026-08-22).
 #   quote    -> optional pull-quote text (no surrounding quote marks; the CSS adds them)
 #   attrib   -> who said it, required whenever quote is set
+#   image_alt-> alt text for that thumbnail. Falls back to the outlet name.
 #
 # NOTE: Susanta is not named in any of these pieces; they name the PIs and the
 # institutions. Keep the wording as "work I contributed to", never "I was featured".
 
 - outlet: "Newsweek"
+  image: "newsweek-cover.jpg"
+  image_alt: 'Newsweek August 2026 cover, "Quantum Is Here"'
   title: "Quantum Computing's Revolutionary Promise Is Bringing Real-World Solutions"
   date: "August 2026"
   url: "https://www.newsweek.com/nw-ai-technology/quantum-computings-revolutionary-promise-is-bringing-real-world-solutions-12332913"
@@ -24,6 +30,8 @@
   attrib: "Prof. Kenneth M. Merz Jr., quoted in Newsweek"
 
 - outlet: "IBM Newsroom"
+  image: "ibm-flibe-tokamak.jpg"
+  image_alt: "Diagram of a tokamak with a molten salt tritium breeding blanket"
   title: "Oak Ridge National Lab, Cleveland Clinic, and IBM achieve first known computations of fusion materials on a quantum computer"
   date: "July 2026"
   url: "https://newsroom.ibm.com/2026-07-06-oak-ridge-national-lab,-cleveland-clinic,-and-ibm-achieve-first-known-computations-of-fusion-materials-on-a-quantum-computer"
@@ -31,6 +39,8 @@
   paper: "https://doi.org/10.48550/arXiv.2606.30402"
 
 - outlet: "Oak Ridge National Laboratory"
+  image: "ornl-genesis-mission.jpg"
+  image_alt: "Genesis Mission"
   title: "Oak Ridge National Lab, Cleveland Clinic and IBM achieve first known computations of fusion materials on a quantum computer"
   date: "July 2026"
   url: "https://www.ornl.gov/news/oak-ridge-national-lab-cleveland-clinic-and-ibm-achieve-first-known-computations-fusion"
