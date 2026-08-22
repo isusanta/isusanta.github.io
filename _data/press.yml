@@ -6,6 +6,9 @@
 #   date     -> display date
 #   url      -> link to the article
 #   note     -> optional one-line description of the connection to his work
+#   paper    -> optional DOI/arXiv link to the underlying paper, rendered as a
+#               "Read the paper" link. Carries the preprint links that used to
+#               live as buttons in the old news hero (removed 2026-08-22).
 #   quote    -> optional pull-quote text (no surrounding quote marks; the CSS adds them)
 #   attrib   -> who said it, required whenever quote is set
 #
@@ -25,9 +28,11 @@
   date: "July 2026"
   url: "https://newsroom.ibm.com/2026-07-06-oak-ridge-national-lab,-cleveland-clinic,-and-ibm-achieve-first-known-computations-of-fusion-materials-on-a-quantum-computer"
   note: "Announcement of the FLiBe molten salt results, on which I am first author."
+  paper: "https://doi.org/10.48550/arXiv.2606.30402"
 
 - outlet: "Oak Ridge National Laboratory"
   title: "Oak Ridge National Lab, Cleveland Clinic and IBM achieve first known computations of fusion materials on a quantum computer"
   date: "July 2026"
   url: "https://www.ornl.gov/news/oak-ridge-national-lab-cleveland-clinic-and-ibm-achieve-first-known-computations-fusion"
   note: "ORNL's release on the same collaboration."
+  paper: "https://doi.org/10.48550/arXiv.2606.30402"

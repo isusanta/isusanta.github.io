@@ -7,81 +7,50 @@ redirect_from:
   - /about.html
 ---
 
-<div class="news-hero">
-  <span class="news-badge">★ In the News · July 2026</span>
-  <h2 class="news-headline">First-Ever Quantum-Computer Calculations of Fusion Reactor Materials</h2>
-  <p class="news-text">Our team at Cleveland Clinic, Oak Ridge National Laboratory, and IBM reported the first known quantum-computer calculations of fusion blanket molten salts (FLiBe), a key step toward tritium extraction for fusion energy. I am first author on the study.</p>
-  <div class="news-links">
-    <a class="news-btn" href="https://newsroom.ibm.com/2026-07-06-oak-ridge-national-lab,-cleveland-clinic,-and-ibm-achieve-first-known-computations-of-fusion-materials-on-a-quantum-computer">IBM Newsroom →</a>
-    <a class="news-btn" href="https://www.ornl.gov/news/oak-ridge-national-lab-cleveland-clinic-and-ibm-achieve-first-known-computations-fusion">Oak Ridge National Lab →</a>
-    <a class="news-btn news-btn-solid" href="https://doi.org/10.48550/arXiv.2606.30402">Read the Preprint →</a>
-  </div>
-  <p class="news-latest">Latest preprint: <a href="https://doi.org/10.48550/arXiv.2607.28548">Quantum Computing Enabled <em>ab initio</em> Molecular Dynamics Simulations</a> (arXiv:2607.28548).</p>
-</div>
+<p class="latest-preprint">
+  <span class="latest-preprint__label">Latest preprint</span>
+  <a href="https://doi.org/10.48550/arXiv.2607.28548">Quantum Computing Enabled <em>ab initio</em> Molecular Dynamics Simulations</a>
+  <span class="latest-preprint__id">arXiv:2607.28548</span>
+</p>
 
 <style>
-.news-hero {
-  background: linear-gradient(135deg, #006d77 0%, #00363d 100%);
-  color: #fff;
-  border-radius: 14px;
-  padding: 1.6em 1.8em 1.7em;
+.latest-preprint {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5em 0.8em;
   margin: 1.2em 0 2em;
-  box-shadow: 0 10px 30px rgba(0,54,61,0.28);
+  padding: 0.85em 1.1em;
+  border-left: 4px solid #006d77;
+  border-radius: 0 8px 8px 0;
+  background: rgba(0,109,119,0.07);
+  font-size: 0.93em;
+  line-height: 1.5;
 }
-.news-badge {
-  display: inline-block;
-  background: rgba(255,255,255,0.16);
-  color: #fff;
-  font-size: 0.72em;
+.latest-preprint__label {
+  font-family: 'Exo 2', 'Inter', sans-serif;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 0.76em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.35em 0.8em;
-  border-radius: 999px;
-  margin-bottom: 0.7em;
+  color: #006d77;
+  flex-shrink: 0;
 }
-.news-headline {
-  color: #fff !important;
-  margin: 0.1em 0 0.4em;
-  font-size: 1.5em;
-  line-height: 1.2;
-  border: none;
-}
-.news-text {
-  color: #e6f2f3;
-  font-size: 0.95em;
-  line-height: 1.55;
-  margin: 0 0 1.1em;
-  max-width: 60ch;
-}
-.news-links { display: flex; flex-wrap: wrap; gap: 0.7em; }
-.news-btn {
-  display: inline-block;
+.latest-preprint a {
+  color: #1f2d2f !important;
   text-decoration: none !important;
-  font-size: 0.85em;
+  border-bottom: 1px solid #9fc3c7;
   font-weight: 600;
-  color: #fff !important;
-  padding: 0.55em 1.1em;
-  border: 1px solid rgba(255,255,255,0.5);
-  border-radius: 8px;
-  transition: background 0.16s ease, transform 0.16s ease;
 }
-.news-btn:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
-.news-btn-solid { background: #fff; color: #006d77 !important; border-color: #fff; }
-.news-btn-solid:hover { background: #e6f2f3; }
-.news-latest {
-  margin: 1.1em 0 0;
-  padding-top: 0.9em;
-  border-top: 1px solid rgba(255,255,255,0.28);
-  font-size: 0.86em;
-  color: rgba(255,255,255,0.85);
+.latest-preprint a:hover { color: #006d77 !important; border-bottom-color: #006d77; }
+.latest-preprint__id { font-size: 0.85em; color: #7a8688; }
+@media (prefers-color-scheme: dark) {
+  .latest-preprint { background: rgba(0,109,119,0.2); border-left-color: #4bb3bd; }
+  .latest-preprint__label { color: #7fd3db; }
+  .latest-preprint a { color: #e6edee !important; border-bottom-color: #3d5153; }
+  .latest-preprint a:hover { color: #7fd3db !important; border-bottom-color: #7fd3db; }
+  .latest-preprint__id { color: #8f9fa1; }
 }
-.news-latest a {
-  color: #fff !important;
-  text-decoration: none !important;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-}
-.news-latest a:hover { border-bottom-color: #fff; }
 </style>
 
 ## In the Press
@@ -101,6 +70,7 @@ redirect_from:
         <cite>{{ p.attrib }}</cite>
       </blockquote>
     {% endif %}
+    {% if p.paper %}<a class="press-paper" href="{{ p.paper }}">Read the paper →</a>{% endif %}
   </article>
 {% endfor %}
 </div>
@@ -123,6 +93,16 @@ redirect_from:
 .press-title a { color: #1f2d2f !important; text-decoration: none !important; border-bottom: 1px solid #cfdadb; }
 .press-title a:hover { color: #006d77 !important; border-bottom-color: #006d77; }
 .press-note { margin: 0.4em 0 0; font-size: 0.88em; line-height: 1.55; color: #4a5859; }
+.press-paper {
+  display: inline-block;
+  margin-top: 0.55em;
+  font-size: 0.83em;
+  font-weight: 600;
+  color: #006d77 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+}
+.press-paper:hover { border-bottom-color: #006d77; }
 .press-quote {
   margin: 0.8em 0 0;
   padding: 0.1em 0 0.1em 1em;
@@ -150,7 +130,8 @@ redirect_from:
   .press-title a:hover { color: #7fd3db !important; border-bottom-color: #7fd3db; }
   .press-note { color: #a9b8ba; }
   .press-quote { color: #c3d0d2; border-left-color: #4bb3bd; }
-  .press-outlet { color: #7fd3db; }
+  .press-outlet, .press-paper { color: #7fd3db !important; }
+  .press-paper:hover { border-bottom-color: #7fd3db; }
 }
 </style>
 
