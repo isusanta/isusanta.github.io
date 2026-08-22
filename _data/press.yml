@@ -1,0 +1,33 @@
+# Press coverage of research Susanta contributed to.
+# Rendered by the "In the Press" block on _pages/about.md. Newest first.
+#
+#   outlet   -> publication name, shown as the small teal label
+#   title    -> the article headline
+#   date     -> display date
+#   url      -> link to the article
+#   note     -> optional one-line description of the connection to his work
+#   quote    -> optional pull-quote text (no surrounding quote marks; the CSS adds them)
+#   attrib   -> who said it, required whenever quote is set
+#
+# NOTE: Susanta is not named in any of these pieces; they name the PIs and the
+# institutions. Keep the wording as "work I contributed to", never "I was featured".
+
+- outlet: "Newsweek"
+  title: "Quantum Computing's Revolutionary Promise Is Bringing Real-World Solutions"
+  date: "August 2026"
+  url: "https://www.newsweek.com/nw-ai-technology/quantum-computings-revolutionary-promise-is-bringing-real-world-solutions-12332913"
+  note: "Cover feature on quantum computing's first real-world results, covering both the Merz group's protein simulations and the Cleveland Clinic and Oak Ridge fusion molten salt work that I first-authored."
+  quote: "We thought we were really going big, but we quickly realized we could have been two or three times larger."
+  attrib: "Prof. Kenneth M. Merz Jr., quoted in Newsweek"
+
+- outlet: "IBM Newsroom"
+  title: "Oak Ridge National Lab, Cleveland Clinic, and IBM achieve first known computations of fusion materials on a quantum computer"
+  date: "July 2026"
+  url: "https://newsroom.ibm.com/2026-07-06-oak-ridge-national-lab,-cleveland-clinic,-and-ibm-achieve-first-known-computations-of-fusion-materials-on-a-quantum-computer"
+  note: "Announcement of the FLiBe molten salt results, on which I am first author."
+
+- outlet: "Oak Ridge National Laboratory"
+  title: "Oak Ridge National Lab, Cleveland Clinic and IBM achieve first known computations of fusion materials on a quantum computer"
+  date: "July 2026"
+  url: "https://www.ornl.gov/news/oak-ridge-national-lab-cleveland-clinic-and-ibm-achieve-first-known-computations-fusion"
+  note: "ORNL's release on the same collaboration."

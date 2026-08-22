@@ -84,6 +84,76 @@ redirect_from:
 .news-latest a:hover { border-bottom-color: #fff; }
 </style>
 
+## In the Press
+
+<div class="press-list">
+{% for p in site.data.press %}
+  <article class="press-item">
+    <div class="press-meta">
+      <span class="press-outlet">{{ p.outlet }}</span>
+      <span class="press-date">{{ p.date }}</span>
+    </div>
+    <h3 class="press-title"><a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a></h3>
+    {% if p.note %}<p class="press-note">{{ p.note }}</p>{% endif %}
+    {% if p.quote %}
+      <blockquote class="press-quote">
+        <span class="press-quote__text">{{ p.quote }}</span>
+        <cite>{{ p.attrib }}</cite>
+      </blockquote>
+    {% endif %}
+  </article>
+{% endfor %}
+</div>
+
+<style>
+.press-list { margin: 1.5em 0 0; }
+.press-item { padding: 1.15em 0; border-bottom: 1px solid #eef2f2; }
+.press-item:last-child { border-bottom: 0; }
+.press-meta { display: flex; align-items: baseline; gap: 0.7em; flex-wrap: wrap; }
+.press-outlet {
+  font-family: 'Exo 2', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.74em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #006d77;
+}
+.press-date { font-size: 0.76em; color: #7a8688; }
+.press-title { margin: 0.3em 0 0; font-size: 1.02em; line-height: 1.4; }
+.press-title a { color: #1f2d2f !important; text-decoration: none !important; border-bottom: 1px solid #cfdadb; }
+.press-title a:hover { color: #006d77 !important; border-bottom-color: #006d77; }
+.press-note { margin: 0.4em 0 0; font-size: 0.88em; line-height: 1.55; color: #4a5859; }
+.press-quote {
+  margin: 0.8em 0 0;
+  padding: 0.1em 0 0.1em 1em;
+  border-left: 3px solid #006d77;
+  font-size: 0.92em;
+  line-height: 1.55;
+  font-style: italic;
+  color: #33474a;
+}
+/* Quote marks must wrap the TEXT, not the blockquote: an ::after on the
+   blockquote renders below the <cite>, stranding a lone closing mark. */
+.press-quote__text::before { content: '\201C'; }
+.press-quote__text::after  { content: '\201D'; }
+.press-quote cite {
+  display: block;
+  margin-top: 0.4em;
+  font-style: normal;
+  font-size: 0.82em;
+  color: #7a8688;
+}
+@media (prefers-color-scheme: dark) {
+  .press-item { border-bottom-color: #2c3a3c; }
+  .press-date, .press-quote cite { color: #8f9fa1; }
+  .press-title a { color: #e6edee !important; border-bottom-color: #33474a; }
+  .press-title a:hover { color: #7fd3db !important; border-bottom-color: #7fd3db; }
+  .press-note { color: #a9b8ba; }
+  .press-quote { color: #c3d0d2; border-left-color: #4bb3bd; }
+  .press-outlet { color: #7fd3db; }
+}
+</style>
+
 ## Featured Work
 
 <div class="cover-gallery">

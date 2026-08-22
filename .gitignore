@@ -27,3 +27,8 @@ CLAUDE.md
 
 # local helper, not for site
 push.sh
+
+# Source/reference documents kept locally, never published.
+# Press articles are copyrighted and large; the site links to them instead.
+*.docx
+~$*
