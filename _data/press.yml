@@ -15,13 +15,16 @@
 #   quote    -> optional pull-quote text (no surrounding quote marks; the CSS adds them)
 #   attrib   -> who said it, required whenever quote is set
 #   image_alt-> alt text for that thumbnail. Falls back to the outlet name.
+#               Do NOT put double quotes in this value: it is interpolated into
+#               an HTML alt="..." attribute and Liquid's {{ }} does not escape,
+#               so a raw " ends the attribute and the whole <img> renders as text.
 #
 # NOTE: Susanta is not named in any of these pieces; they name the PIs and the
 # institutions. Keep the wording as "work I contributed to", never "I was featured".
 
 - outlet: "Newsweek"
   image: "newsweek-cover.jpg"
-  image_alt: 'Newsweek August 2026 cover, "Quantum Is Here"'
+  image_alt: "Newsweek August 2026 cover, Quantum Is Here"
   title: "Quantum Computing's Revolutionary Promise Is Bringing Real-World Solutions"
   date: "August 2026"
   url: "https://www.newsweek.com/nw-ai-technology/quantum-computings-revolutionary-promise-is-bringing-real-world-solutions-12332913"

@@ -60,7 +60,7 @@ redirect_from:
   <article class="press-item">
     {% if p.image %}
     <a class="press-thumb" href="{{ p.url }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
-      <img src="/images/press/{{ p.image }}" alt="{{ p.image_alt | default: p.outlet }}" loading="lazy">
+      <img src="/images/press/{{ p.image }}" alt="{{ p.image_alt | default: p.outlet | escape }}" loading="lazy">
     </a>
     {% endif %}
     <div class="press-body">
