@@ -9,7 +9,7 @@
 # service      -> peer review summary paragraph
 
 stats:
-  - value: "28"
+  - value: "29"
     label: "Publications"
   - value: "724"
     label: "Citations"

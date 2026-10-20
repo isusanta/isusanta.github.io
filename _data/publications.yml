@@ -2,6 +2,13 @@
 # type: "journal" (includes arXiv preprints) | "book_chapter"
 # Order: reverse chronological within each type.
 
+- title: "Predicting Collision Cross Sections with GRACE: Geometric Residual Adduct Conditioning via Early-fusion"
+  authors: "Parthasarathy Suryanarayanan, Susanta Das, Shreyans Sethi, Kenneth M. Merz Jr., and Joseph A. Morrone"
+  venue: "arXiv:2609.12223 (2026)"
+  year: 2026
+  doi: "10.48550/arXiv.2609.12223"
+  type: "journal"
+
 - title: "Quantum Computing Enabled ab initio Molecular Dynamics Simulations"
   authors: "Susanta Das, Subhamoy Bhowmik, Zhen Li, Milana Bazayeva, Danil Kaliakin, Akhil Shajan, and Kenneth M. Merz Jr."
   venue: "arXiv:2607.28548 (2026)"
