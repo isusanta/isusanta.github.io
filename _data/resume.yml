@@ -11,13 +11,13 @@
 stats:
   - value: "28"
     label: "Publications"
-  - value: "672"
+  - value: "724"
     label: "Citations"
   - value: "15"
     label: "h-index"
 
 # Date the citation/metrics band was last refreshed (shown under the stat band).
-stats_updated: "August 2026"
+stats_updated: "October 2026"
 
 # Institutional email, shown in the CV contact row next to the personal one.
 # Personal address lives in _config.yml (site.author.email) and is used site-wide;

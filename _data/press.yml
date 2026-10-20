@@ -49,3 +49,11 @@
   url: "https://www.ornl.gov/news/oak-ridge-national-lab-cleveland-clinic-and-ibm-achieve-first-known-computations-fusion"
   note: "ORNL's release on the same collaboration."
   paper: "https://doi.org/10.48550/arXiv.2606.30402"
+
+- outlet: "Oak Ridge National Laboratory (video)"
+  image: "ornl-tritium-video.jpg"
+  image_alt: "Still from the ORNL video, a family looking over a city at sunrise with the Genesis Mission logo"
+  title: "Enabling Tritium Fuel Production for Domestic Fusion Energy"
+  date: "June 2026"
+  url: "https://www.youtube.com/watch?v=4I8GwLeplso"
+  note: "ORNL video on the tritium fuel production collaboration with IBM, aligned with the DOE Genesis Mission."
