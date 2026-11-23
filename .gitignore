@@ -32,3 +32,8 @@ push.sh
 # Press articles are copyrighted and large; the site links to them instead.
 *.docx
 ~$*
+
+# Private session workflow files. This repo is public; never publish these.
+llm/
+start_session.py
+next_session_prompt.txt

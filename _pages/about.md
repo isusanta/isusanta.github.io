@@ -8,9 +8,9 @@ redirect_from:
 ---
 
 <p class="latest-preprint">
-  <span class="latest-preprint__label">Latest preprint</span>
-  <a href="https://doi.org/10.48550/arXiv.2607.28548">Quantum Computing Enabled <em>ab initio</em> Molecular Dynamics Simulations</a>
-  <span class="latest-preprint__id">arXiv:2607.28548</span>
+  <span class="latest-preprint__label">Latest paper</span>
+  <a href="https://doi.org/10.1021/acs.jctc.6c01546">Quantum Computing-Enabled <em>Ab Initio</em> Molecular Dynamics Simulations</a>
+  <span class="latest-preprint__id">J. Chem. Theory Comput. 2026, ASAP</span>
 </p>
 
 <style>

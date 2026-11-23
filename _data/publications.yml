@@ -2,18 +2,18 @@
 # type: "journal" (includes arXiv preprints) | "book_chapter"
 # Order: reverse chronological within each type.
 
+- title: "Quantum Computing-Enabled Ab Initio Molecular Dynamics Simulations"
+  authors: "Susanta Das, Subhamoy Bhowmik, Zhen Li, Milana Bazayeva, Danil Kaliakin, Akhil Shajan, and Kenneth M. Merz Jr."
+  venue: "J. Chem. Theory Comput. 2026, ASAP"
+  year: 2026
+  doi: "10.1021/acs.jctc.6c01546"
+  type: "journal"
+
 - title: "Predicting Collision Cross Sections with GRACE: Geometric Residual Adduct Conditioning via Early-fusion"
   authors: "Parthasarathy Suryanarayanan, Susanta Das, Shreyans Sethi, Kenneth M. Merz Jr., and Joseph A. Morrone"
   venue: "arXiv:2609.12223 (2026)"
   year: 2026
   doi: "10.48550/arXiv.2609.12223"
-  type: "journal"
-
-- title: "Quantum Computing Enabled ab initio Molecular Dynamics Simulations"
-  authors: "Susanta Das, Subhamoy Bhowmik, Zhen Li, Milana Bazayeva, Danil Kaliakin, Akhil Shajan, and Kenneth M. Merz Jr."
-  venue: "arXiv:2607.28548 (2026)"
-  year: 2026
-  doi: "10.48550/arXiv.2607.28548"
   type: "journal"
 
 - title: "Quantum Computations on Fusion Blanket Molten Salts"
@@ -60,7 +60,7 @@
 
 - title: "Accurate Quantum-Centric Simulations of Intermolecular Interactions"
   authors: "Danil Kaliakin, Akhil Shajan, Javier Robledo Moreno, Zhen Li, Abhishek Mitra, Mario Motta, Caleb Johnson, Abdullah Ash Saki, Susanta Das, Iskandar Sitdikov, Antonio Mezzacapo, and Kenneth M. Merz Jr."
-  venue: "Nat. Commun. Phys. 2025, 8, 396"
+  venue: "Commun. Phys. 2025, 8, 396"
   year: 2025
   doi: "10.1038/s42005-025-02305-9"
   type: "journal"
@@ -193,7 +193,7 @@
 
 - title: "Nuclear Quantum Effects in Enzymatic Reactions"
   authors: "Dan T. Major, Reuven Eitan, Susanta Das, Anil R. Mhashal, and Vijay Singh"
-  venue: "Simulating Enzyme Reactivity: Computational Methods in Enzyme Catalysis, Royal Society of Chemistry, 2017, Ch. 9, pp. 340-376"
+  venue: "Simulating Enzyme Reactivity: Computational Methods in Enzyme Catalysis, Royal Society of Chemistry, 2017, Ch. 10, pp. 340-374"
   year: 2017
   doi: "10.1039/9781782626831-00340"
   type: "book_chapter"
