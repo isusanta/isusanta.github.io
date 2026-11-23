@@ -6,6 +6,11 @@
 # Order = display order (gallery.html renders in file order, no sort).
 # Kept NEWEST -> OLDEST by the date in each caption.
 
+- image: "telluride-tsic-2026.jpg"
+  # Cropped to 16:9. Wide, so both 2026 photos fill clean rows in date order.
+  wide: true
+  caption: "Talk at the workshop on the Convergence of High-Performance Computing and Quantum Computing, Telluride Science and Innovation Center, Telluride, Colorado — October 2026"
+
 - image: "hernandez-cleveland-2026.jpg"
   # 16:9 source. Renders uncropped across two grid columns; see .photo-card--wide.
   wide: true

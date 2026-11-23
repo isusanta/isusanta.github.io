@@ -10,7 +10,7 @@ redirect_from:
 <p class="latest-preprint">
   <span class="latest-preprint__label">Latest paper</span>
   <a href="https://doi.org/10.1021/acs.jctc.6c01546">Quantum Computing-Enabled <em>Ab Initio</em> Molecular Dynamics Simulations</a>
-  <span class="latest-preprint__id">J. Chem. Theory Comput. 2026, ASAP</span>
+  <span class="latest-preprint__id">J. Chem. Theory Comput. 2026, ASAP · <a href="https://doi.org/10.5281/zenodo.22922958" target="_blank" rel="noopener noreferrer">code</a></span>
 </p>
 
 <style>

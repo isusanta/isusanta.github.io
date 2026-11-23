@@ -118,6 +118,9 @@ education:
 talks:
   - group: "Oral Presentations"
     items:
+      - date: "Oct 2026"
+        event: "The Convergence of High-Performance Computing (HPC) and Quantum Computing (QC) to Solve Science Grand Challenges, Telluride Science and Innovation Center, Telluride, Colorado, USA"
+        note: "Invited workshop"
       - date: "Aug 2026"
         event: "Quantum-centric Supercomputing for Healthcare and Life Sciences panel, Texas Quantum Summit 2026; University of Texas at Dallas, Richardson, Texas, USA"
         note: "Invited panelist"
@@ -219,7 +222,7 @@ skills:
       - "VESTA"
 
 service: >
-  41 review assignments across 14 journals (2017-2026), including <em>J. Chem. Inf. Model.</em>,
+  43 review assignments across 20 journals (2017-2026), including <em>J. Chem. Theory Comput.</em>, <em>J. Chem. Inf. Model.</em>,
   <em>ACS Omega</em>, <em>J. Org. Chem.</em>, <em>Nanoscale</em>, <em>Struct. Chem.</em>,
   <em>Theor. Chem. Acc.</em>, <em>J. Comput.-Aided Mol. Des.</em>, <em>J. Mol. Liq.</em>, and
   MDPI journals.

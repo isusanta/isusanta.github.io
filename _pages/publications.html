@@ -16,7 +16,7 @@ author_profile: true
     <span class="pub-title">{{ pub.title }}</span><br>
     {% if pub.type == "book_chapter" %}<span class="pub-tag">(Book chapter)</span> {% endif %}{{ pub.authors | replace: "Susanta Das", "<strong>Susanta Das</strong>" }}
     <em>{{ pub.venue }}</em>.
-    <a href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>
+    <a href="https://doi.org/{{ pub.doi }}">doi:{{ pub.doi }}</a>{% if pub.code_url %} · Code: <a href="{{ pub.code_url }}" target="_blank" rel="noopener noreferrer">{{ pub.code_label }}</a> (Zenodo){% endif %}
   </li>
 {% endfor %}
 </ol>
